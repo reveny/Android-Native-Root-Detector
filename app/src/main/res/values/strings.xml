@@ -6,7 +6,7 @@
     <string name="false_a">False</string>
     <string name="true_b">True</string>
     <string name="false_b">False</string>
-    <string name="sysinfo">System :</string>
+    <string name="sysinfo">System Informations</string>
     <string name="sysinfo_device">Device: %s</string>
     <string name="sysinfo_android_version">Android Version: %s</string>
     <string name="sysinfo_kernel_version">Kernel Version: %s</string>
@@ -25,6 +25,8 @@
     <string name="settings">Settings</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
+    <!-- Preference Strings -->
+    <string name="title_general">General</string>
     <string name="pref_telemetry">Disable Telemetry</string>
     <string name="pref_telemetry_on">Sentry telemetry is disabled</string>
     <string name="pref_telemetry_off">This will disable Sentry telemetry</string>
