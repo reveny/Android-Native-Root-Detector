@@ -26,7 +26,7 @@
     <string name="pref_telemetry_on">Sentry telemetry is disabled</string>
     <string name="pref_telemetry_off">This will disable Sentry telemetry</string>
     <string name="pref_snow">Disable Winter Theme</string>
-    <string name="pref_snow_on">The winder theme is disabled</string>
+    <string name="pref_snow_on">The winter theme is disabled</string>
     <string name="pref_snow_off">This will disable the winter theme</string>
     <string name="pref_experimental">Enable Experimental Detections</string>
     <string name="pref_experimental_on">Experimental detections are enabled</string>
@@ -66,7 +66,7 @@
     <string name="detected_root_solution">Detected Root Solution</string>
     <string name="detected_hide_my_applist">Detected Hide My Applist</string>
     <string name="detected_ksu_ap_modules_img">Detected KSU/AP modules.img</string>
-    <string name="detected_custom_rom">Detected Custom Rom (%s)</string>
+    <string name="detected_custom_rom">Detected Custom ROM (%s)</string>
     <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil contains lineage</string>
     <string name="detected_gapps">Detected GApps</string>
     <string name="detected_custom_kernel">Detected Custom Kernel</string>
