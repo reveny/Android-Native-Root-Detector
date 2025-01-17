@@ -16,7 +16,8 @@
     <string name="appinfo_unknown_version">UNKNOWN</string>
     <string name="experimental_detections">Experimental Detections: %s</string>
     <string name="color_indigo">Indigo</string>
-    <string name="DayNight">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
     <string name="device_info">%s (%s)</string>
     <string name="the_environment_is_normal">The Environment is normal</string>
     <string name="the_environment_is_abnormal">The Environment is abnormal</string>
