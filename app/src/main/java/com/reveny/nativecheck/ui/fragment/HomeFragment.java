@@ -184,7 +184,7 @@ public class HomeFragment extends BaseFragment {
         }
         binding.Signature.setText(String.format(getString(R.string.appinfo_signature), getSignature()));
 
-        binding.ExperimentalEnabled.setText(String.format(getString(R.string.experimental_detections), enableExperimental ? getString(R.string.value_true) : getString(R.string.value_false)));
+        binding.ExperimentalEnabled.setText(String.format(getString(R.string.experimental_detections), enableExperimental ? getString(R.string.true_a) : getString(R.string.false_a)));
         return binding.getRoot();
     }
 
@@ -296,7 +296,7 @@ public class HomeFragment extends BaseFragment {
             return;
         }
 
-        binding.SignatureValid.setText(String.format(getString(R.string.appinfo_is_signature_valid), (valid ? getString(R.string.value_true) : getString(R.string.value_false))));
+        binding.SignatureValid.setText(String.format(getString(R.string.appinfo_is_signature_valid), (valid ? getString(R.string.true_b) : getString(R.string.false_b))));
 
         if (!valid)
         {
