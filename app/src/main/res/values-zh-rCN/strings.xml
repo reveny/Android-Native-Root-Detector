@@ -54,7 +54,7 @@
     <string name="detected_lsposed">检测到 LSPosed（%s）</string>
     <string name="no_system_apps_found">找不到任何系统应用</string>
     <string name="detected_lineageos">检测到 LineageOS（%s）</string>
-    <string name="no_info_given">未给出信息</string>
+    <string name="no_info_given">未公开的检测项</string>
     <string name="detected_modified_hosts_file">检测到修改的 Hosts 文件</string>
     <string name="detected_resetprop">检测到 Resetprop</string>
     <string name="tee_is_broken">TEE 损坏</string>
@@ -63,13 +63,13 @@
     <string name="detected_abnormal_boot_state">检测到 Boot 状态异常</string>
     <string name="detected_leaked_keybox">检测到泄露的 Keybox</string>
     <string name="detected_mount_abnormality">检测到挂载异常</string>
-    <string name="detected_root_solution">检测到 Root 解决方案</string>
+    <string name="detected_root_solution">检测到 Root 应用</string>
     <string name="detected_hide_my_applist">检测到隐藏应用列表</string>
     <string name="detected_ksu_ap_modules_img">检测到 KernelSU／APatch 的模块镜像</string>
-    <string name="detected_custom_rom">检测到自定义 ROM（%s）</string>
+    <string name="detected_custom_rom">检测到非原厂 ROM（%s）</string>
     <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil 包含“lineage”</string>
     <string name="detected_gapps">检测到 GApps</string>
-    <string name="detected_custom_kernel">检测到自定义内核</string>
+    <string name="detected_custom_kernel">检测到非官方内核</string>
     <string name="detected_framework_patch">检测到框架补丁</string>
     <string name="detected_overlayfs">检测到 OverlayFS</string>
     <string name="detected_overlay_mounted">检测到 Overlay 已挂载</string>
