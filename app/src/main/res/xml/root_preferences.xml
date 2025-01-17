@@ -1,5 +1,5 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
-    <PreferenceCategory app:title="General">
+    <PreferenceCategory app:title="@string/title_general">
         <CheckBoxPreference
             app:key="disable_telemetry"
             app:title="@string/pref_telemetry"
