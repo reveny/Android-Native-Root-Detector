@@ -423,7 +423,7 @@ public class HomeFragment extends BaseFragment {
                     }
                 } else {
                     connection.disconnect();
-                    requireActivity().runOnUiThread(() -> Toast.makeText(requireContext(), "Failed to fetch update information", Toast.LENGTH_SHORT).show());
+                    requireActivity().runOnUiThread(() -> Toast.makeText(requireContext(), getString(R.string.failed_to_get_update_info), Toast.LENGTH_SHORT).show());
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -457,11 +457,11 @@ public class HomeFragment extends BaseFragment {
 
     private void showUpdateDialog(String latestVersion, String apkUrl, String apkName) {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireContext());
-        builder.setTitle("Update Available")
-                .setMessage("Version " + latestVersion + " is available. Do you want to download it now?")
+        builder.setTitle(getString(R.string.update_available))
+                .setMessage(getString(R.string.version_is_available_1) + latestVersion + getString(R.string.version_is_available_2))
                 .setCancelable(true)
-                .setPositiveButton("OK", (dialog, which) -> downloadAndInstallApk(apkUrl, apkName))
-                .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
+                .setPositiveButton(getString(R.string.update_confirm), (dialog, which) -> downloadAndInstallApk(apkUrl, apkName))
+                .setNegativeButton(getString(R.string.update_cancel), (dialog, which) -> dialog.dismiss())
                 .show();
     }
 
@@ -475,8 +475,8 @@ public class HomeFragment extends BaseFragment {
         }
 
         AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
-        builder.setTitle("Downloading Update");
-        builder.setMessage("Please wait...");
+        builder.setTitle(getString(R.string.update_downloading));
+        builder.setMessage(getString(R.string.update_wait));
         builder.setCancelable(false);
 
         ProgressBar progressBar = new ProgressBar(requireActivity(), null, android.R.attr.progressBarStyleHorizontal);
@@ -538,10 +538,10 @@ public class HomeFragment extends BaseFragment {
                     requireActivity().runOnUiThread(() -> {
                         progressDialog.dismiss();
                         try {
-                            Toast.makeText(requireActivity(), "Download failed: " + connection.getResponseMessage(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(requireActivity(), getString(R.string.download_failed) + connection.getResponseMessage(), Toast.LENGTH_LONG).show();
                         } catch (IOException e) {
                             e.printStackTrace();
-                            Toast.makeText(requireActivity(), "Download failed: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(requireActivity(), getString(R.string.download_failed) + e.getMessage(), Toast.LENGTH_LONG).show();
                         }
                     });
                 }
@@ -549,7 +549,7 @@ public class HomeFragment extends BaseFragment {
                 e.printStackTrace();
                 requireActivity().runOnUiThread(() -> {
                     progressDialog.dismiss();
-                    Toast.makeText(requireActivity(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(requireActivity(), getString(R.string.error) + e.getMessage(), Toast.LENGTH_LONG).show();
                 });
             }
         }).start();
@@ -579,7 +579,7 @@ public class HomeFragment extends BaseFragment {
         if (installIntent.resolveActivity(requireContext().getPackageManager()) != null) {
             startActivity(installIntent);
         } else {
-            Toast.makeText(requireContext(), "No application available to install APK", Toast.LENGTH_LONG).show();
+            Toast.makeText(requireContext(), getString(R.string.unable_to_install), Toast.LENGTH_LONG).show();
         }
     }
 }
