@@ -146,7 +146,7 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?textAppearanceTitleMedium"
                             android:fontFamily="sans-serif-medium"
-                            android:text="System :" />
+                            android:text="@string/sysinfo" />
                         <com.google.android.material.textview.MaterialTextView
                             style="@style/Label"
                             android:id="@+id/Device"
