@@ -123,6 +123,7 @@ public class HomeFragment extends BaseFragment {
                 String newTheme = isNightMode ? ThemeUtil.MODE_NIGHT_NO : ThemeUtil.MODE_NIGHT_YES;
                 AppCompatDelegate.setDefaultNightMode(ThemeUtil.getDarkTheme(newTheme));
                 item.setIcon(isNightMode ? R.drawable.ic_light_mode : R.drawable.ic_outline_dark_mode_24);
+                item.setTitle(isNightMode ? getString(R.string.light_mode) : getString(R.string.dark_mode));
                 App.getPreferences().edit().putString("dark_theme", newTheme).apply();
                 activity.recreate();
             }
