@@ -58,7 +58,7 @@
     <string name="detected_modified_hosts_file">Detected modified Hosts file</string>
     <string name="detected_resetprop">Detected Resetprop</string>
     <string name="tee_is_broken">TEE is broken</string>
-    <string name="keybox_revoked_by_google">"Keybox %s was revoked by google"</string>
+    <string name="keybox_revoked_by_google">Keybox %s was revoked by Google</string>
     <string name="key_attestation_failed">Key Attestation failed</string>
     <string name="detected_abnormal_boot_state">Detected Abnormal Boot State</string>
     <string name="detected_leaked_keybox">Detected Leaked Keybox</string>
@@ -68,11 +68,11 @@
     <string name="detected_ksu_ap_modules_img">Detected KSU/AP modules.img</string>
     <string name="detected_custom_rom">Detected Custom Rom (%s)</string>
     <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil contains lineage</string>
-    <string name="detected_gapps">Detected Gapps</string>
+    <string name="detected_gapps">Detected GApps</string>
     <string name="detected_custom_kernel">Detected Custom Kernel</string>
     <string name="detected_framework_patch">Detected Framework Patch</string>
-    <string name="detected_overlayfs">Detected Overlayfs</string>
-    <string name="detected_overlay_mounted">Overlay mounted but mount may be hidden</string>
+    <string name="detected_overlayfs">Detected OverlayFS</string>
+    <string name="detected_overlay_mounted">Detected overlay mounted</string>
     <string name="overlay_mounted_but_mount_may_be_hidden">Overlay mounted but mount may be hidden</string>
     <string name="detected_risky_app">Detected Risky App</string>
     <string name="hide_my_applist_is_likely_used">Hide My Applist is likely used</string>
