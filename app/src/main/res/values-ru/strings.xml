@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Детектор</string>
     <string name="about_view_source_code"><![CDATA[Присоединяйтесь к %1$s каналу<br/><br>Автор © %2$s<br/>]]></string>
     <string name="About">Сведения</string>
     <string name="true_a">Да</string>
