@@ -21,6 +21,7 @@
     <string name="description_abnormal">检测到对环境的修改。</string>
     <string name="settings">设置</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    
     <string name="pref_telemetry">禁用遥测功能</string>
     <string name="pref_telemetry_on">遥测已关闭</string>
     <string name="pref_telemetry_off">不再收集和发送匿名统计数据</string>
@@ -30,4 +31,53 @@
     <string name="pref_experimental">启用实验性检测</string>
     <string name="pref_experimental_on">实验性检测已开启</string>
     <string name="pref_experimental_off">使用尚在实验中的检测项（需重启应用）</string>
+    <string name="pref_use_system_language">使用系统语言</string>
+    <string name="pref_use_system_language_on">当前应用语言已跟随系统</string>
+    <string name="pref_use_system_language_off">当前使用应用的默认语言</string>
+
+    <!-- 检测相关 -->
+    <string name="modified_environment_detected">检测到修改的环境</string>
+    <string name="suspicious_mount_detected">检测到可疑的挂载</string>
+    <string name="detected_kernelsu_magisk">检测到 KernelSU／Magisk</string>
+    <string name="detected_magisk">检测到 Magisk</string>
+    <string name="detected_zygisk_assistant">检测到 Zygisk-Assistant</string>
+    <string name="bootloader_unlocked">Bootloader 已解锁</string>
+    <string name="oem_unlocking_enabled">OEM 解锁已启用</string>
+    <string name="detected_zygisk_official_magisk">检测到 Zygisk（Magisk 官方）</string>
+    <string name="detected_zygisk_next">检测到 Zygisk Next（%s）</string>
+    <string name="debug_fingerprint_detected">检测到调试指纹（%s）</string>
+    <string name="found_magisk_recovery_file">发现 Magisk／Recovery 文件</string>
+    <string name="found_su_binary">检测到 SU 二进制文件</string>
+    <string name="detected_zygisk">检测到 Zygisk</string>
+    <string name="detected_magisk_module">检测到 Magisk 模块</string>
+    <string name="found_injection">发现注入</string>
+    <string name="detected_lsposed">检测到 LSPosed（%s）</string>
+    <string name="no_system_apps_found">找不到任何系统应用</string>
+    <string name="detected_lineageos">检测到 LineageOS（%s）</string>
+    <string name="no_info_given">未给出信息</string>
+    <string name="detected_modified_hosts_file">检测到修改的 Hosts 文件</string>
+    <string name="detected_resetprop">检测到 Resetprop</string>
+    <string name="tee_is_broken">TEE 损坏</string>
+    <string name="keybox_revoked_by_google">Keybox %s 被吊销</string>
+    <string name="key_attestation_failed">密钥认证失败</string>
+    <string name="detected_abnormal_boot_state">检测到 Boot 状态异常</string>
+    <string name="detected_leaked_keybox">检测到泄露的 Keybox</string>
+    <string name="detected_mount_abnormality">检测到挂载异常</string>
+    <string name="detected_root_solution">检测到 Root 解决方案</string>
+    <string name="detected_hide_my_applist">检测到隐藏应用列表</string>
+    <string name="detected_ksu_ap_modules_img">检测到 KernelSU／APatch 的模块镜像</string>
+    <string name="detected_custom_rom">检测到自定义 ROM（%s）</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil 包含“lineage”</string>
+    <string name="detected_gapps">检测到 GApps</string>
+    <string name="detected_custom_kernel">检测到自定义内核</string>
+    <string name="detected_framework_patch">检测到框架补丁</string>
+    <string name="detected_overlayfs">检测到 OverlayFS</string>
+    <string name="detected_overlay_mounted">检测到 Overlay 已挂载</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay 已挂载但可能被隐藏</string>
+    <string name="detected_risky_app">检测到风险应用</string>
+    <string name="hide_my_applist_is_likely_used">疑似使用了隐藏应用列表</string>
+    <string name="addon_d_or_install_recovery_sh_exists">存在 Addon.d 或 install-recovery.sh</string>
+    <string name="detected_root_app">检测到 Root 管理器</string>
+    <string name="detected_mount_inconsistency">检测到挂载不一致</string>
+    <string name="umount_detected">检测到 Umount</string>
 </resources>
