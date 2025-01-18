@@ -23,7 +23,7 @@
     <string name="description_normal">No se detectan modificaciones en el entorno.</string>
     <string name="description_abnormal">Se detectan modificaciones en el entorno.</string>
     <string name="settings">Ajustes</string>
-    <string name="title_activity_settings">Actividad de Ajustes</string>
+    <string name="title_activity_settings">SettingsActivity</string>
    
     <!-- Preference Strings -->
     <string name="title_general">General</string>
