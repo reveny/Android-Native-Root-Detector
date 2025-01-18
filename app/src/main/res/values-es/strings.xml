@@ -53,7 +53,7 @@
     <string name="error">Error: </string>
     <string name="unable_to_install">No hay aplicación disponible para instalar el APK</string>
 
-   <!-- Detection Strings -->
+    <!-- Detection Strings -->
     <string name="modified_environment_detected">Entorno Modificado Detectado</string>
     <string name="suspicious_mount_detected">Montaje Sospechoso Detectado</string>
     <string name="detected_kernelsu_magisk">KernelSU/Magisk Detectado</string>
