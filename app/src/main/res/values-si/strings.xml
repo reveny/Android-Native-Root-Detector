@@ -27,19 +27,19 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Strings -->
-    <string name="title_general">General</string>
+    <string name="title_general">Splošno</string>
     <string name="pref_telemetry">Disable Telemetry</string>
     <string name="pref_telemetry_on">Sentry telemetry is disabled</string>
     <string name="pref_telemetry_off">This will disable Sentry telemetry</string>
-    <string name="pref_snow">Disable Winter Theme</string>
-    <string name="pref_snow_on">The winter theme is disabled</string>
-    <string name="pref_snow_off">This will disable the winter theme</string>
+    <string name="pref_snow">Onemogoči zimsko temo</string>
+    <string name="pref_snow_on">Zimska tema je onemogočena</string>
+    <string name="pref_snow_off">To onemogoči zimsko temo</string>
     <string name="pref_experimental">Enable Experimental Detections</string>
     <string name="pref_experimental_on">Experimental detections are enabled</string>
     <string name="pref_experimental_off">This will enable experimental detections (restart required)</string>
-    <string name="pref_use_system_language">Use System Language</string>
-    <string name="pref_use_system_language_on">The app will use the system language</string>
-    <string name="pref_use_system_language_off">This will use the default language</string>
+    <string name="pref_use_system_language">Uporabi sistemski jezik</string>
+    <string name="pref_use_system_language_on">Aplikacija bo uporabila sistemski jezik</string>
+    <string name="pref_use_system_language_off">To bo uporabilo privzeti jezik</string>
 
     <!-- Updation Strings -->
     <string name="failed_to_get_update_info">Failed to fetch update information</string>
