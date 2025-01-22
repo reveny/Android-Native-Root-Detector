@@ -23,7 +23,7 @@
     <string name="description_normal">Ortamda herhangi bir değişiklik algılanmadı.</string>
     <string name="description_abnormal">Ortamda değişiklikler tespit edildi.</string>
     <string name="settings">Ayarlar</string>
-    <string name="title_activity_settings">Ayarlar Etkinliği</string>
+    <string name="title_activity_settings">Ayarlar Aktivitesi</string>
 
     <!-- Preference Strings -->
     <string name="title_general">Genel</string>
@@ -84,11 +84,11 @@
     <string name="detected_root_solution">Root Çözümü Algılandı</string>
     <string name="detected_hide_my_applist">Hide My Applist Algılandı</string>
     <string name="detected_ksu_ap_modules_img">KSU/AP modules.img Algılandı</string>
-    <string name="detected_custom_rom">Özel ROM Algılandı (%s)</string>
+    <string name="detected_custom_rom">Custom Rom Algılandı (%s)</string>
     <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil lineage içeriyor</string>
     <string name="detected_gapps">GApps Algılandı</string>
-    <string name="detected_custom_kernel">Özel Çekirdek Algılandı</string>
-    <string name="detected_framework_patch">Çerçeve Yaması Algılandı</string>
+    <string name="detected_custom_kernel">Custom Kernel Algılandı</string>
+    <string name="detected_framework_patch">Framework Yaması Algılandı</string>
     <string name="detected_overlayfs">OverlayFS Algılandı</string>
     <string name="detected_overlay_mounted">Overlay Bağlandı</string>
     <string name="overlay_mounted_but_mount_may_be_hidden">Overlay bağlandı ancak bağlama gizlenmiş olabilir</string>
