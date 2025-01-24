@@ -18,6 +18,6 @@
         android:id="@+id/menu_dayNight"
         android:icon="@drawable/ic_light_mode"
         android:showAsAction="ifRoom"
-        android:title="@string/DayNight" />
+        android:title="@string/light_mode" />
 
 </menu>

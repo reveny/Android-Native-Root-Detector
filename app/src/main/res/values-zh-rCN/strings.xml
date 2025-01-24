@@ -16,7 +16,8 @@
     <string name="appinfo_unknown_version">未知</string>
     <string name="experimental_detections">实验性检测：%s</string>
     <string name="color_indigo">深蓝色</string>
-    <string name="DayNight">暗色模式</string>
+    <string name="light_mode">亮色模式</string>
+    <string name="dark_mode">暗色模式</string>
     <string name="device_info">%s（%s）</string>
     <string name="the_environment_is_normal">环境正常</string>
     <string name="the_environment_is_abnormal">环境异常</string>
@@ -37,8 +38,8 @@
     <string name="pref_experimental_on">实验性检测已开启</string>
     <string name="pref_experimental_off">使用尚在实验阶段的检测项（需重启应用）</string>
     <string name="pref_use_system_language">使用系统语言</string>
-    <string name="pref_use_system_language_on">当前应用语言已跟随系统</string>
-    <string name="pref_use_system_language_off">当前使用应用的默认语言</string>
+    <string name="pref_use_system_language_on">当前语言跟随系统</string>
+    <string name="pref_use_system_language_off">当前为应用默认语言</string>
 
     <!-- 更新相关 -->
     <string name="failed_to_get_update_info">获取更新信息失败</string>
