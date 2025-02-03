@@ -24,11 +24,11 @@ import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CardElevation
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.MaterialTheme.typography
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -64,47 +64,46 @@ import compose.icons.tablericons.outline.Virus
 
 @Composable
 fun CheckCard(
-    isDetected: Boolean
+    modifier: Modifier = Modifier,
+    isDetected: Boolean,
+) = Surface(
+    modifier = Modifier
+        .fillMaxWidth()
+        .clip(RoundedCornerShape(16.dp))
+        .then(modifier),
+    color = MaterialTheme.colorScheme.primary,
 ) {
-    ElevatedCard(
+    Row(
         modifier = Modifier
-            .padding(horizontal = 16.dp, vertical = 12.dp)
-            .clip(MaterialTheme.shapes.medium),
-        colors = CardDefaults.elevatedCardColors(
-            containerColor = MaterialTheme.colorScheme.primary
-        ),
-        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 2.dp)
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 22.dp),
+        verticalAlignment = Alignment.CenterVertically
     ) {
-        Spacer(modifier = Modifier.height(6.dp))
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(all = 16.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Icon(
-                imageVector = Icons.Filled.Info,
-                contentDescription = "Info",
-                tint = MaterialTheme.colorScheme.onPrimary,
-                modifier = Modifier.size(24.dp)
+        Icon(
+            imageVector = Icons.Filled.Info,
+            contentDescription = "Info",
+            tint = MaterialTheme.colorScheme.onPrimary,
+            modifier = Modifier.size(24.dp)
+        )
+        Spacer(modifier = Modifier.width(24.dp))
+        Column {
+            Text(
+                text = if (isDetected) stringResource(R.string.the_environment_is_abnormal) else stringResource(
+                    R.string.the_environment_is_normal
+                ),
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onPrimary,
+                fontWeight = FontWeight.Medium
             )
-            Spacer(modifier = Modifier.width(24.dp))
-            Column {
-                Text(
-                    text = if (isDetected) stringResource(R.string.the_environment_is_abnormal) else stringResource(R.string.the_environment_is_normal),
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.onPrimary,
-                    fontWeight = FontWeight.Medium
-                )
-                // Spacer(modifier = Modifier.height(8.dp))
-                Text(
-                    text = if (isDetected) stringResource(R.string.description_abnormal) else stringResource(R.string.description_normal),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onPrimary
-                )
-            }
+            // Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = if (isDetected) stringResource(R.string.description_abnormal) else stringResource(
+                    R.string.description_normal
+                ),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onPrimary
+            )
         }
-        Spacer(modifier = Modifier.height(6.dp))
     }
 }
 
@@ -118,9 +117,10 @@ fun DetectionCard(
 
     Surface(
         modifier = Modifier
-            .padding(horizontal = 16.dp, vertical = 12.dp)
+            .fillMaxWidth()
             .clip(RoundedCornerShape(16.dp))
             .clickable { expanded = !expanded },
+        color = MaterialTheme.colorScheme.surface,
         tonalElevation = 2.dp
     ) {
         Column(
@@ -137,7 +137,10 @@ fun DetectionCard(
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.weight(1f)
                 )
-                val rotateAngle by animateFloatAsState(if (expanded) 180f else 0f)
+                val rotateAngle by animateFloatAsState(
+                    if (expanded) 180f else 0f,
+                    label = "rotateAngle"
+                )
                 Icon(
                     imageVector = Icons.Filled.ArrowDropDown,
                     contentDescription = null,
@@ -156,7 +159,13 @@ fun DetectionCard(
                             detectTapGestures(
                                 onLongPress = {
                                     clipboardManager.setText(AnnotatedString(detection.description))
-                                    Toast.makeText(context, "Details copied to clipboard", Toast.LENGTH_SHORT).show()
+                                    Toast
+                                        .makeText(
+                                            context,
+                                            "Details copied to clipboard",
+                                            Toast.LENGTH_SHORT
+                                        )
+                                        .show()
                                 }
                             )
                         }
@@ -174,10 +183,12 @@ fun DetectionCard(
 fun AboutCard() {
     val uriHandler = LocalUriHandler.current
 
-    ElevatedCard(
+    Surface(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp)
+            .clip(RoundedCornerShape(16.dp)),
+        color = MaterialTheme.colorScheme.surface,
+        tonalElevation = 1.dp
     ) {
         Row(
             modifier = Modifier
@@ -188,7 +199,7 @@ fun AboutCard() {
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(R.string.support_us),
-                    style = typography.titleSmall
+                    style = MaterialTheme.typography.titleSmall
                 )
             }
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -213,83 +224,87 @@ fun AboutCard() {
             }
         }
     }
-    Spacer(modifier = Modifier.height(8.dp))
 }
 
 @Composable
-fun SystemInfoCard(deviceInfo: String, androidVersion: String, kernelVersion: String) {
-    ElevatedCard(
+fun SystemInfoCard(deviceInfo: String, androidVersion: String, kernelVersion: String) = Surface(
+    modifier = Modifier
+        .fillMaxWidth()
+        .clip(RoundedCornerShape(16.dp)),
+    color = MaterialTheme.colorScheme.surface,
+    tonalElevation = 1.dp
+) {
+    Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .padding(20.dp),
+        verticalArrangement = Arrangement.Center
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(20.dp),
-            verticalArrangement = Arrangement.Center
-        ) {
-            Text(
-                text = "System :",
-                style = MaterialTheme.typography.titleSmall,
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = deviceInfo,
-                style = MaterialTheme.typography.bodyMedium
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = androidVersion,
-                style = MaterialTheme.typography.bodyMedium
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = kernelVersion,
-                style = MaterialTheme.typography.bodyMedium
-            )
-        }
+        Text(
+            text = "System :",
+            style = MaterialTheme.typography.titleSmall,
+        )
+        Spacer(modifier = Modifier.height(8.dp))
+        Text(
+            text = deviceInfo,
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = androidVersion,
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = kernelVersion,
+            style = MaterialTheme.typography.bodyMedium
+        )
     }
 }
 
 @Composable
-fun AppInfoCard(appVersion: String, signature: String, signatureValid: String, experimentalEnabled: String) {
-    ElevatedCard(
+fun AppInfoCard(
+    appVersion: String,
+    signature: String,
+    signatureValid: String,
+    experimentalEnabled: String,
+) = Surface(
+    modifier = Modifier
+        .fillMaxWidth()
+        .clip(RoundedCornerShape(16.dp)),
+    color = MaterialTheme.colorScheme.surface,
+    tonalElevation = 1.dp
+) {
+    Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .padding(20.dp),
+        verticalArrangement = Arrangement.Center
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(20.dp),
-            verticalArrangement = Arrangement.Center
-        ) {
-            Text(
-                text = "App :",
-                style = MaterialTheme.typography.titleSmall,
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = appVersion,
-                style = MaterialTheme.typography.bodyMedium
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = signature,
-                style = MaterialTheme.typography.bodyMedium
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = signatureValid,
-                style = MaterialTheme.typography.bodyMedium
-            )
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = experimentalEnabled,
-                style = MaterialTheme.typography.bodyMedium
-            )
-        }
+        Text(
+            text = "App :",
+            style = MaterialTheme.typography.titleSmall,
+        )
+        Spacer(modifier = Modifier.height(8.dp))
+        Text(
+            text = appVersion,
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = signature,
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = signatureValid,
+            style = MaterialTheme.typography.bodyMedium
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = experimentalEnabled,
+            style = MaterialTheme.typography.bodyMedium
+        )
     }
 }
 
@@ -305,7 +320,8 @@ fun InfoCards(viewModel: MainViewModel) {
 
     Column(
         modifier = Modifier
-            .fillMaxSize()
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         SystemInfoCard(
             deviceInfo = deviceInfo,
@@ -318,7 +334,6 @@ fun InfoCards(viewModel: MainViewModel) {
             signatureValid = signatureValid,
             experimentalEnabled = experimentalEnabled
         )
-        Spacer(modifier = Modifier.height(8.dp))
     }
 }
 

@@ -2,6 +2,7 @@ package com.reveny.nativecheck.ui.activity
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.navigationBars
@@ -53,15 +54,18 @@ fun MainScreen(viewModel: MainViewModel) {
             },
             contentWindowInsets = WindowInsets.navigationBars
         ) {
-            Box(modifier = Modifier.fillMaxSize()) {
-                NavHost(
-                    modifier = Modifier.padding(it),
+            NavHost(
+                modifier = Modifier
+                    .padding(bottom = it.calculateBottomPadding()),
+                navController = navController,
+                startDestination = MainScreen.Home.route,
+            ) {
+                homeScreen(
                     navController = navController,
-                    startDestination = MainScreen.Home.route,
-                ) {
-                    homeScreen(navController = navController, viewModel = viewModel, detections = detections)
-                    settingsScreen(navController = navController)
-                }
+                    viewModel = viewModel,
+                    detections = detections
+                )
+                settingsScreen(navController = navController)
             }
         }
     }
@@ -69,7 +73,7 @@ fun MainScreen(viewModel: MainViewModel) {
 
 @Composable
 private fun BottomNav(
-    navController: NavController
+    navController: NavController,
 ) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
