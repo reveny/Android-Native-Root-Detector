@@ -8,7 +8,7 @@
     <string name="false_b">Sai</string>
     <string name="sysinfo">Thông tin hệ thống</string>
     <string name="sysinfo_device">Thiết bị: %s</string>
-    <string name="sysinfo_android_version">Phiên bản android: %s</string>
+    <string name="sysinfo_android_version">Thông tin thiết bị: %s</string>
     <string name="sysinfo_kernel_version">Phiên bản kernel: %s</string>
     <string name="appinfo_version">Phiên bản ứng dụng: %s</string>
     <string name="appinfo_signature">Chữ kí ứng dụng: %s</string>
@@ -33,7 +33,7 @@
     <string name="pref_snow">Tắt theme mùa đông</string>
     <string name="pref_snow_on">Theme nùa đông đã dược vô hiệu hóa</string>
     <string name="pref_snow_off">Sẽ sử dụng theme mặc định</string>
-    <string name="pref_experimental">Kích họat tính năng phát hiện tập tin/tệp/chữ kí đáng ngờ thử nghiệm (có sai số</string>
+    <string name="pref_experimental">Kích họat tính năng phát hiện tập tin/tệp/chữ kí đáng ngờ thử nghiệm (có sai số)</string>
     <string name="pref_experimental_on">Tính năng phát hiện tập tin/tệp/chữ kí đáng ngờ thử nghiệm đang dược bật</string>
     <string name="pref_experimental_off">Sẽ kích hoạt tính năng phát hiện tập tin/tệp/chữ kí đáng ngờ thử nghiệm (yêu cầu khởi động lại)</string>
     <string name="pref_use_system_language">Sử dụng ngôn ngữ theo hệ thống</string>
@@ -85,7 +85,7 @@
     <string name="detected_hide_my_applist">Đã phát hiện ứng dụng HMA(Hide My App)</string>
     <string name="detected_ksu_ap_modules_img">Đã phát hiện modules.img</string>
     <string name="detected_custom_rom">Đã phát hiện Custom ROM (%s)</string>
-    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil có chứa nhận Lineageos</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil có chứa nhân Lineageos</string>
     <string name="detected_gapps">Đã phát hiện GApps bên thứ 3 (nikgapps/mindthegapps/flamegapps/...)</string>
     <string name="detected_custom_kernel">Đã phát hiện custom kernel</string>
     <string name="detected_framework_patch">Đã phát hiện Framework Patch</string>
@@ -94,7 +94,7 @@
     <string name="overlay_mounted_but_mount_may_be_hidden">Overlay đã mount nhưng có thể dã được ẩn (nice try)</string>
     <string name="detected_risky_app">Đã phát hiện ứng dụng đáng ngờ</string>
     <string name="hide_my_applist_is_likely_used">Có thể Hide My Applist đã được sử dụng </string>
-    <string name="addon_d_or_install_recovery_sh_exists">Có chứa Addon.d hoặc install-recovery.sh</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Có chứa đã bị can thiệp Addon.d hoặc install-recovery.sh</string>
     <string name="detected_root_app">Đã phát hiện ứng dụng để root</string>
     <string name="detected_mount_inconsistency">Đã phát hiện sử xung đột trong qúa trình mount module</string>
     <string name="umount_detected">Lệnh unmount đã được phát hiện</string>
