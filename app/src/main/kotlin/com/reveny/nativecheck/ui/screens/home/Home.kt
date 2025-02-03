@@ -50,23 +50,6 @@ import compose.icons.tablericons.filled.BrandPaypal
 import compose.icons.tablericons.outline.BrandTelegram
 import compose.icons.tablericons.outline.CircleCheck
 
-val list = listOf(
-
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-    DetectionData("Detection 1", "Description 1"),
-)
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Home(navController: NavController, viewModel: MainViewModel, detections: List<DetectionData>) {
@@ -96,12 +79,12 @@ fun Home(navController: NavController, viewModel: MainViewModel, detections: Lis
         ) {
             item {
                 CheckCard(
-                    isDetected = list.isNotEmpty(),
+                    isDetected = detections.isNotEmpty(),
                 )
             }
 
             // Adding detection cards
-            items(list) { detection ->
+            items(detections) { detection ->
                 DetectionCard(detection = detection)
             }
 
