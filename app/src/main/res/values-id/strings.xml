@@ -1,0 +1,95 @@
+<resources>
+    <string name="settings">Pengaturan</string>
+    <string name="settings_app">Aplikasi</string>
+    <string name="home_label">Beranda</string>
+    <string name="settings_label">Pengaturan</string>
+    <string name="support_us">Dukung Kami</string>
+
+    <string name="about_view_source_code"><![CDATA[Bergabunglah dengan saluran %1$s kami<br/><br>Hak Cipta © %2$s<br/>]]></string>
+    <string name="About">Tentang</string>
+    <string name="true_a">Benar</string>
+    <string name="false_a">Salah</string>
+    <string name="true_b">Benar</string>
+    <string name="false_b">Salah</string>
+    <string name="sysinfo">Informasi Sistem</string>
+    <string name="sysinfo_device">Perangkat: %s</string>
+    <string name="sysinfo_android_version">Versi Android: %s</string>
+    <string name="sysinfo_kernel_version">Versi Kernel: %s</string>
+    <string name="appinfo_version">Versi Aplikasi: %s</string>
+    <string name="appinfo_signature">Tanda Tangan Aplikasi: %s</string>
+    <string name="appinfo_is_signature_valid">Tanda Tangan Valid: %s</string>
+    <string name="appinfo_unknown_version">TIDAK DIKETAHUI</string>
+    <string name="experimental_detections">Deteksi Eksperimental: %s</string>
+    <string name="DayNight">Mode Gelap</string>
+    <string name="the_environment_is_normal">Lingkungan normal</string>
+    <string name="the_environment_is_abnormal">Lingkungan tidak normal</string>
+    <string name="description_normal">Tidak ada modifikasi yang terdeteksi pada lingkungan.</string>
+    <string name="description_abnormal">Modifikasi pada lingkungan terdeteksi.</string>
+
+    <!-- Preference Strings -->
+    <string name="title_general">Umum</string>
+    <string name="pref_telemetry">Nonaktifkan Telemetri</string>
+    <string name="pref_telemetry_on">Telemetri Sentry dinonaktifkan</string>
+    <string name="pref_telemetry_off">Ini akan menonaktifkan telemetri Sentry</string>
+    <string name="pref_experimental">Aktifkan Deteksi Eksperimental</string>
+    <string name="pref_experimental_on">Deteksi eksperimental diaktifkan</string>
+    <string name="pref_experimental_off">Ini akan mengaktifkan deteksi eksperimental (perlu restart)</string>
+
+    <!-- Update Strings -->
+    <string name="failed_to_get_update_info">Gagal mengambil informasi pembaruan</string>
+    <string name="update_available">Pembaruan Tersedia</string>
+    <string name="version_is_available" translatable="false">Versi %s tersedia. Apakah Anda ingin mengunduhnya sekarang?</string>
+    <string name="update_confirm">OK</string>
+    <string name="update_cancel">Batal</string>
+    <string name="update_downloading">Mengunduh Pembaruan</string>
+    <string name="update_wait">Mohon tunggu…</string>
+    <string name="download_failed">Gagal mengunduh: %s</string>
+    <string name="error">Kesalahan: %s</string>
+    <string name="unable_to_install">Tidak ada aplikasi yang tersedia untuk memasang APK</string>
+
+    <!-- Detection Strings -->
+    <string name="modified_environment_detected">Lingkungan yang Dimodifikasi Terdeteksi</string>
+    <string name="suspicious_mount_detected">Mount Mencurigakan Terdeteksi</string>
+    <string name="detected_kernelsu_magisk">KernelSU/Magisk Terdeteksi</string>
+    <string name="detected_magisk">Magisk Terdeteksi</string>
+    <string name="detected_zygisk_assistant">Zygisk-Assistant Terdeteksi</string>
+    <string name="bootloader_unlocked">Bootloader Terbuka</string>
+    <string name="oem_unlocking_enabled">Pembukaan OEM Diaktifkan</string>
+    <string name="detected_zygisk_official_magisk">Zygisk (Magisk Resmi) Terdeteksi</string>
+    <string name="detected_zygisk_next">Zygisk Next Terdeteksi (%s)</string>
+    <string name="debug_fingerprint_detected">Sidik Jari Debug terdeteksi (%s)</string>
+    <string name="found_magisk_recovery_file">File Magisk/Recovery Ditemukan</string>
+    <string name="found_su_binary">SU Binary Ditemukan</string>
+    <string name="detected_zygisk">Zygisk Terdeteksi</string>
+    <string name="detected_magisk_module">Modul Magisk Terdeteksi</string>
+    <string name="found_injection">Injeksi Ditemukan</string>
+    <string name="detected_lsposed">LSPosed Terdeteksi (%s)</string>
+    <string name="no_system_apps_found">Tidak ada aplikasi sistem yang ditemukan</string>
+    <string name="detected_lineageos">LineageOS Terdeteksi (%s)</string>
+    <string name="no_info_given">Tidak ada informasi yang diberikan</string>
+    <string name="detected_modified_hosts_file">File Hosts yang dimodifikasi terdeteksi</string>
+    <string name="detected_resetprop">Resetprop Terdeteksi</string>
+    <string name="tee_is_broken">TEE rusak</string>
+    <string name="keybox_revoked_by_google">Keybox %s dicabut oleh Google</string>
+    <string name="key_attestation_failed">Attestasi Kunci gagal</string>
+    <string name="detected_abnormal_boot_state">Status Boot Tidak Normal Terdeteksi</string>
+    <string name="detected_leaked_keybox">Keybox Bocor Terdeteksi</string>
+    <string name="detected_mount_abnormality">Keanehan Mount Terdeteksi</string>
+    <string name="detected_root_solution">Solusi Root Terdeteksi</string>
+    <string name="detected_hide_my_applist">Hide My Applist Terdeteksi</string>
+    <string name="detected_ksu_ap_modules_img">KSU/AP modules.img Terdeteksi</string>
+    <string name="detected_custom_rom">ROM Kustom Terdeteksi (%s)</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil mengandung lineage</string>
+    <string name="detected_gapps">GApps Terdeteksi</string>
+    <string name="detected_custom_kernel">Kernel Kustom Terdeteksi</string>
+    <string name="detected_framework_patch">Patch Framework Terdeteksi</string>
+    <string name="detected_overlayfs">OverlayFS Terdeteksi</string>
+    <string name="detected_overlay_mounted">Overlay Terpasang Terdeteksi</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay terpasang tetapi mount mungkin tersembunyi</string>
+    <string name="detected_risky_app">Aplikasi Berisiko Terdeteksi</string>
+    <string name="hide_my_applist_is_likely_used">Kemungkinan Hide My Applist digunakan</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Addon.d atau install-recovery.sh ada</string>
+    <string name="detected_root_app">Aplikasi Root Terdeteksi</string>
+    <string name="detected_mount_inconsistency">Ketidaksesuaian Mount Terdeteksi</string>
+    <string name="umount_detected">Umount Terdeteksi</string>
+</resources>
