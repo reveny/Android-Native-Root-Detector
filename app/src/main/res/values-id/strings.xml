@@ -1,6 +1,7 @@
 <resources>
     <string name="settings">Pengaturan</string>
     <string name="settings_app">Aplikasi</string>
+    <string name="language">Bahasa</string>
     <string name="home_label">Beranda</string>
     <string name="settings_label">Pengaturan</string>
     <string name="support_us">Dukung Kami</string>
@@ -33,7 +34,7 @@
     <string name="pref_telemetry_off">Ini akan menonaktifkan telemetri Sentry</string>
     <string name="pref_experimental">Aktifkan Deteksi Eksperimental</string>
     <string name="pref_experimental_on">Deteksi eksperimental diaktifkan</string>
-    <string name="pref_experimental_off">Ini akan mengaktifkan deteksi eksperimental (perlu restart)</string>
+    <string name="pref_experimental_off">Ini akan mengaktifkan deteksi eksperimental (diperlukan restart)</string>
 
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Gagal mengambil informasi pembaruan</string>
@@ -54,10 +55,10 @@
     <string name="detected_magisk">Magisk Terdeteksi</string>
     <string name="detected_zygisk_assistant">Zygisk-Assistant Terdeteksi</string>
     <string name="bootloader_unlocked">Bootloader Terbuka</string>
-    <string name="oem_unlocking_enabled">Pembukaan OEM Diaktifkan</string>
+    <string name="oem_unlocking_enabled">Pembukaan Kunci OEM Diaktifkan</string>
     <string name="detected_zygisk_official_magisk">Zygisk (Magisk Resmi) Terdeteksi</string>
     <string name="detected_zygisk_next">Zygisk Next Terdeteksi (%s)</string>
-    <string name="debug_fingerprint_detected">Sidik Jari Debug terdeteksi (%s)</string>
+    <string name="debug_fingerprint_detected">Debug Sidik Jari Terdeteksi (%s)</string>
     <string name="found_magisk_recovery_file">File Magisk/Recovery Ditemukan</string>
     <string name="found_su_binary">SU Binary Ditemukan</string>
     <string name="detected_zygisk">Zygisk Terdeteksi</string>
@@ -87,7 +88,7 @@
     <string name="detected_overlay_mounted">Overlay Terpasang Terdeteksi</string>
     <string name="overlay_mounted_but_mount_may_be_hidden">Overlay terpasang tetapi mount mungkin tersembunyi</string>
     <string name="detected_risky_app">Aplikasi Berisiko Terdeteksi</string>
-    <string name="hide_my_applist_is_likely_used">Kemungkinan Hide My Applist digunakan</string>
+    <string name="hide_my_applist_is_likely_used">Hide My Applist kemungkinan digunakan</string>
     <string name="addon_d_or_install_recovery_sh_exists">Addon.d atau install-recovery.sh ada</string>
     <string name="detected_root_app">Aplikasi Root Terdeteksi</string>
     <string name="detected_mount_inconsistency">Ketidaksesuaian Mount Terdeteksi</string>
