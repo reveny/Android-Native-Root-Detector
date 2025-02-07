@@ -54,7 +54,7 @@ kotlinx-serialization-protobuf = { group = "org.jetbrains.kotlinx", name = "kotl
 # core bundle
 material-kolor = { group = "com.materialkolor", name = "material-kolor", version = "2.0.2" }
 android-svg = { group = "com.caverock", name = "androidsvg-aar", version = "1.4" }
-boringssl = { group = "io.github.vvb2060.ndk", name = "boringssl", version = "20241024" }
+boringssl = { group = "io.github.vvb2060.ndk", name = "boringssl", version = "20250114" }
 coil-base = { group = "io.coil-kt", name = "coil-base", version = "2.7.0" }
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version = "2.7.0" }
 coil-svg = { group = "io.coil-kt", name = "coil-svg", version = "2.7.0" }
