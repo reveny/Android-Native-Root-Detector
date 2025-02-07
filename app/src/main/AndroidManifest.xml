@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="DataExtractionRules,RtlEnabled"
-        tools:targetApi="34">
+        tools:targetApi="35">
 
         <activity
             android:name=".ui.activity.MainActivity"

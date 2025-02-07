@@ -9,12 +9,10 @@ buildscript {
         verName = '6.6.1'
         androidTargetSdkVersion = 35
         androidMinSdkVersion = 27
-        androidBuildToolsVersion = '34.0.0'
         androidCompileSdkVersion = 35
-        androidCompileNdkVersion = '27.0.12077973'
-        androidSourceCompatibility = JavaVersion.VERSION_20
-        androidTargetCompatibility = JavaVersion.VERSION_20
-        androidKotlinCompilerExtensionVersion = "1.5.13"
+        androidCompileNdkVersion = '28.0.13004108'
+        androidSourceCompatibility = JavaVersion.VERSION_21
+        androidTargetCompatibility = JavaVersion.VERSION_21
     }
 }
 
@@ -34,7 +32,6 @@ subprojects {
         extensions.configure(CommonExtension) { ext ->
             ext.compileSdk = androidCompileSdkVersion
             ext.ndkVersion = androidCompileNdkVersion
-            ext.buildToolsVersion = androidBuildToolsVersion
 
             ext.defaultConfig { config ->
                 config.minSdk = androidMinSdkVersion
@@ -53,10 +50,6 @@ subprojects {
             ext.compileOptions {
                 sourceCompatibility = androidSourceCompatibility
                 targetCompatibility = androidTargetCompatibility
-            }
-
-            ext.composeOptions {
-                kotlinCompilerExtensionVersion = androidKotlinCompilerExtensionVersion
             }
 
             ext.buildFeatures {

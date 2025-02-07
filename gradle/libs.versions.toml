@@ -1,8 +1,8 @@
 [versions]
-agp = "8.6.1"
-kotlin = "2.0.0"
-hilt = "2.51.1"
-accompanist = "0.34.0"
+agp = "8.8.0"
+kotlin = "2.1.10"
+hilt = "2.55"
+accompanist = "0.36.0"
 androidxLifecycle = "2.8.7"
 
 [libraries]
@@ -49,12 +49,12 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", v
 javaxInject = { group = "javax.inject", name = "javax.inject", version = "1" }
 
 # protobuf bundle
-kotlinx-serialization-protobuf = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-protobuf", version = "1.7.1" }
+kotlinx-serialization-protobuf = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-protobuf", version = "1.8.0" }
 
 # core bundle
-material-kolor = { group = "com.materialkolor", name = "material-kolor", version = "1.7.0" }
+material-kolor = { group = "com.materialkolor", name = "material-kolor", version = "2.0.2" }
 android-svg = { group = "com.caverock", name = "androidsvg-aar", version = "1.4" }
-boringssl = { group = "io.github.vvb2060.ndk", name = "boringssl", version = "4.0" }
+boringssl = { group = "io.github.vvb2060.ndk", name = "boringssl", version = "20241024" }
 coil-base = { group = "io.coil-kt", name = "coil-base", version = "2.7.0" }
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version = "2.7.0" }
 coil-svg = { group = "io.coil-kt", name = "coil-svg", version = "2.7.0" }
@@ -69,9 +69,9 @@ hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version = "2.0.0-1.0.22" }
+ksp = { id = "com.google.devtools.ksp", version = "2.1.10-1.0.29" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
-sentry = { id = "io.sentry.android.gradle", version = "4.14.1" }
+sentry = { id = "io.sentry.android.gradle", version = "5.1.0" }
 
 [bundles]
 androidxCompose = [
