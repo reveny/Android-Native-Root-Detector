@@ -38,7 +38,7 @@
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Failed to fetch update information</string>
     <string name="update_available">Update Available</string>
-    <string name="version_is_available" translatable="false">Version %s is available. Do you want to download it now?</string> <!-- TODO: Translate in other languages -->
+    <string name="version_is_available">Version %s is available. Do you want to download it now?</string> <!-- TODO: Translate in other languages -->
     <string name="update_confirm">OK</string>
     <string name="update_cancel">Cancel</string>
     <string name="update_downloading">Downloading Update</string>
