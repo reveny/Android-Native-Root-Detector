@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">Native Detector</string>
+    <string name="settings">Settings</string>
+    <string name="settings_app">App</string>
+    <string name="home_label">Home</string>
+    <string name="settings_label">Settings</string>
+    <string name="support_us">Support Us</string>
+
     <string name="about_view_source_code"><![CDATA[Únete a nuestro canal %1$s<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">Acerca de</string>
     <string name="true_a">Verdadero</string>
@@ -15,32 +20,22 @@
     <string name="appinfo_is_signature_valid">Firma Válida: %s</string>
     <string name="appinfo_unknown_version">DESCONOCIDA</string>
     <string name="experimental_detections">Detecciones Experimentales: %s</string>
-    <string name="color_indigo">Índigo</string>
     <string name="DayNight">Modo Oscuro</string>
-    <string name="device_info">%s (%s)</string>
     <string name="the_environment_is_normal">El entorno es normal</string>
     <string name="the_environment_is_abnormal">El entorno es anormal</string>
     <string name="description_normal">No se detectan modificaciones en el entorno.</string>
     <string name="description_abnormal">Se detectan modificaciones en el entorno.</string>
-    <string name="settings">Ajustes</string>
-    <string name="title_activity_settings">SettingsActivity</string>
    
     <!-- Preference Strings -->
     <string name="title_general">General</string>
     <string name="pref_telemetry">Desactivar Telemetría</string>
     <string name="pref_telemetry_on">La telemetría de Sentry está desactivada</string>
     <string name="pref_telemetry_off">Esto desactivará la telemetría de Sentry</string>
-    <string name="pref_snow">Desactivar Tema de Invierno</string>
-    <string name="pref_snow_on">El tema de invierno está desactivado</string>
-    <string name="pref_snow_off">Esto desactivará el tema de invierno</string>
     <string name="pref_experimental">Activar Detecciones Experimentales</string>
     <string name="pref_experimental_on">Las detecciones experimentales están activadas</string>
     <string name="pref_experimental_off">Esto activará las detecciones experimentales (se requiere reinicio)</string>
-    <string name="pref_use_system_language">Usar Idioma del Sistema</string>
-    <string name="pref_use_system_language_on">La aplicación usará el idioma del sistema</string>
-    <string name="pref_use_system_language_off">Esto usará el idioma predeterminado</string>
     
-    <!-- Updation Strings -->
+    <!-- Update Strings -->
     <string name="failed_to_get_update_info">Error al obtener información de actualización</string>
     <string name="update_available">Actualización Disponible</string>
     <string name="version_is_available_1">La versión </string>
@@ -48,7 +43,7 @@
     <string name="update_confirm">Aceptar</string>
     <string name="update_cancel">Cancelar</string>
     <string name="update_downloading">Descargando Actualización</string>
-    <string name="update_wait">Por favor, espere...</string>
+    <string name="update_wait">Por favor, espere…</string>
     <string name="download_failed">Descarga fallida: </string>
     <string name="error">Error: </string>
     <string name="unable_to_install">No hay aplicación disponible para instalar el APK</string>

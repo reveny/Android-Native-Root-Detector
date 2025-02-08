@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">Native Detector</string>
+
+    <string name="language" translatable="false">Language</string>
+    <string name="en" translatable="false">English</string>
+    <string name="ar" translatable="false">Arabic</string>
+    <string name="de" translatable="false">German</string>
+    <string name="pl" translatable="false">Polish</string>
+    <string name="pt_br" translatable="false">Portuguese (Brazil)</string>
+    <string name="ru" translatable="false">Russian</string>
+    <string name="sl" translatable="false">Slovenian</string>
+    <string name="tr_tr" translatable="false">Turkish (Turkey)</string>
+    <string name="vi" translatable="false">Vietnamese</string>
+    <string name="zh_cn" translatable="false">Chinese (Simplified)</string>
+</resources>

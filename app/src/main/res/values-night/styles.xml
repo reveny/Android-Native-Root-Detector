@@ -1,5 +1,0 @@
-<resources>
-
-    <style name="AppTheme" parent="Theme" />
-    <style name="ThemeOverlay.MaterialIndigo" parent="ThemeOverlay.Dark.MaterialIndigo"/>
-</resources>

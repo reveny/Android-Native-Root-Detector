@@ -1,12 +1,17 @@
 <resources>
-    <string name="app_name">Native Detector</string>
+    <string name="settings">Settings</string>
+    <string name="settings_app">App</string>
+    <string name="home_label">Home</string>
+    <string name="settings_label">Settings</string>
+    <string name="support_us">Support Us</string>
+
     <string name="about_view_source_code"><![CDATA[Join our %1$s channel<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">About</string>
     <string name="true_a">True</string>
     <string name="false_a">False</string>
     <string name="true_b">True</string>
     <string name="false_b">False</string>
-    <string name="sysinfo">System Informations</string>
+    <string name="sysinfo">System Information</string>
     <string name="sysinfo_device">Device: %s</string>
     <string name="sysinfo_android_version">Android Version: %s</string>
     <string name="sysinfo_kernel_version">Kernel Version: %s</string>
@@ -15,42 +20,31 @@
     <string name="appinfo_is_signature_valid">Signature Valid: %s</string>
     <string name="appinfo_unknown_version">UNKNOWN</string>
     <string name="experimental_detections">Experimental Detections: %s</string>
-    <string name="color_indigo">Indigo</string>
     <string name="DayNight">Dark Mode</string>
-    <string name="device_info">%s (%s)</string>
     <string name="the_environment_is_normal">The Environment is normal</string>
     <string name="the_environment_is_abnormal">The Environment is abnormal</string>
     <string name="description_normal">No modifications to the environment are detected.</string>
     <string name="description_abnormal">Modifications to the environment are detected.</string>
-    <string name="settings">Settings</string>
-    <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Strings -->
     <string name="title_general">General</string>
     <string name="pref_telemetry">Disable Telemetry</string>
     <string name="pref_telemetry_on">Sentry telemetry is disabled</string>
     <string name="pref_telemetry_off">This will disable Sentry telemetry</string>
-    <string name="pref_snow">Disable Winter Theme</string>
-    <string name="pref_snow_on">The winter theme is disabled</string>
-    <string name="pref_snow_off">This will disable the winter theme</string>
     <string name="pref_experimental">Enable Experimental Detections</string>
     <string name="pref_experimental_on">Experimental detections are enabled</string>
     <string name="pref_experimental_off">This will enable experimental detections (restart required)</string>
-    <string name="pref_use_system_language">Use System Language</string>
-    <string name="pref_use_system_language_on">The app will use the system language</string>
-    <string name="pref_use_system_language_off">This will use the default language</string>
 
-    <!-- Updation Strings -->
+    <!-- Update Strings -->
     <string name="failed_to_get_update_info">Failed to fetch update information</string>
     <string name="update_available">Update Available</string>
-    <string name="version_is_available_1">Version </string>
-    <string name="version_is_available_2"> is available. Do you want to download it now?</string>
+    <string name="version_is_available" translatable="false">Version %s is available. Do you want to download it now?</string> <!-- TODO: Translate in other languages -->
     <string name="update_confirm">OK</string>
     <string name="update_cancel">Cancel</string>
     <string name="update_downloading">Downloading Update</string>
-    <string name="update_wait">Please wait...</string>
-    <string name="download_failed">Download failed: </string>
-    <string name="error">Error: </string>
+    <string name="update_wait">Please wait…</string>
+    <string name="download_failed">Download failed: %s</string>
+    <string name="error">Error: %s</string>
     <string name="unable_to_install">No application available to install APK</string>
 
     <!-- Detection Strings -->

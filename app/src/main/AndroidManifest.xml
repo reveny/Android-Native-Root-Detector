@@ -11,28 +11,21 @@
         android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
-        android:extractNativeLibs="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="DataExtractionRules,RtlEnabled"
-        tools:targetApi="34">
-        <activity
-            android:name=".ui.activity.SettingsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_settings" />
+        tools:targetApi="35">
 
         <activity
             android:name=".ui.activity.MainActivity"
-            android:exported="true"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
+            tools:ignore="LockedOrientationActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

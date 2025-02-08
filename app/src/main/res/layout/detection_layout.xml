@@ -1,9 +1,0 @@
-<!-- res/layout/material_text_view_layout.xml -->
-<com.google.android.material.textview.MaterialTextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/Detection1"
-    style="@style/Label"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textAppearance="?textAppearanceBodyMedium"
-    android:text="- Found Magisk.">
-</com.google.android.material.textview.MaterialTextView>

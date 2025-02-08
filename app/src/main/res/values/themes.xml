@@ -1,44 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Base.AppTheme.Light" parent="Theme.Material3.DynamicColors.Light.Rikka">
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="colorPrimaryVariant">@color/primary_dark_light_light_status_bar</item>
-
-        <item name="android:statusBarColor">?android:colorBackground</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-
-        <!-- Preference title -->
-        <item name="android:textAppearanceListItem">?textAppearanceSubtitle1</item>
-        <!-- Preference category title -->
-        <item name="android:colorAccent">?colorPrimary</item>
-        <!-- Preference switch -->
-        <item name="android:colorControlActivated">?colorPrimary</item>
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
-
-    <style name="Theme.Light" parent="Base.AppTheme.Light" />
-
-    <style name="Base.AppTheme" parent="Theme.Material3.DynamicColors.Dark.Rikka">
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-
-        <!-- Preference title -->
-        <item name="android:textAppearanceListItem">?textAppearanceSubtitle1</item>
-        <!-- Preference category title -->
-        <item name="android:colorAccent">?colorPrimary</item>
-        <!-- Preference switch -->
-        <item name="android:colorControlActivated">?colorPrimary</item>
-    </style>
-
-    <style name="Theme" parent="Base.AppTheme" />
-    <style name="Label">
-        <item name="android:textAlignment">viewStart</item>
-        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
-    </style>
-
 </resources>

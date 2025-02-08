@@ -1,7 +1,10 @@
 plugins {
-    id 'com.android.application'
-    alias(libs.plugins.materialthemebuilder)
-    alias(libs.plugins.autoresconfig)
+    alias(libs.plugins.agp.app)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -19,6 +22,10 @@ android {
         }
 
         buildConfigField 'long', 'BUILD_TIME', Instant.now().epochSecond.toString()
+
+        vectorDrawables {
+            useSupportLibrary true
+        }
     }
 
     buildFeatures {
@@ -27,25 +34,7 @@ android {
     }
 
     buildTypes {
-        debug {
-            ndk {
-                debugSymbolLevel 'FULL'
-            }
-            externalNativeBuild {
-                ndkBuild {
-                    arguments "APP_OPTIM=debug"
-                    arguments "NDK_DEBUG=1"
-                }
-            }
-        }
         release {
-            externalNativeBuild {
-                ndkBuild {
-                    arguments "APP_OPTIM=release"
-                    arguments "NDK_DEBUG=0"
-                }
-            }
-
             minifyEnabled true
             multiDexEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -53,54 +42,27 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    kotlinOptions {
+        jvmTarget = "21"
     }
 }
 
-materialThemeBuilder {
-    themes {
-        def themes = ['Indigo': '3F51B5']
-        themes.each { name, color ->
-            create("Material${name}") {
-                lightThemeFormat = "ThemeOverlay.Light.%s"
-                darkThemeFormat = "ThemeOverlay.Dark.%s"
-                primaryColor = "#${color}"
-            }
-        }
-    }
-    generatePalette true
-}
-
-autoResConfig {
-    generateClass = true
-    generateRes = false
-    generatedClassFullName = 'com.reveny.nativecheck.util.LangList'
-    generatedArrayFirstItem = 'SYSTEM'
+kotlin {
+    jvmToolchain(21)
 }
 
 dependencies {
-    implementation libs.rikkax.appcompat
-    implementation libs.rikkax.core
-    implementation libs.rikkax.insets
-    implementation libs.rikkax.material
-    implementation libs.rikkax.preference
-    implementation libs.rikkax.recyclerview
-    implementation libs.rikkax.widget.borderview
-    implementation libs.rikkax.widget.mainswitchbar
-    implementation libs.rikkax.layoutinflater
-
-    implementation libs.material
-    implementation libs.androidx.activity
-    implementation libs.androidx.browser
-    implementation libs.androidx.constraintlayout
-    implementation libs.androidx.core
-    implementation libs.androidx.fragment
-    implementation libs.androidx.preference
-    implementation libs.androidx.recyclerview
-    implementation libs.androidx.swiperefreshlayout
-}
-
-configurations.configureEach {
-    exclude group: 'androidx.appcompat', module: 'appcompat'
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.bundles.androidxCompose
+    implementation libs.bundles.accompanist
+    implementation libs.bundles.androidx
+    implementation libs.bundles.androidxLifecycle
+    implementation libs.bundles.dependencyInjection
+    ksp libs.hilt.compiler
+    implementation libs.bundles.protobuf
+    implementation libs.bundles.core
 }

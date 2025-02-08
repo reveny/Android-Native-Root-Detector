@@ -1,41 +1,76 @@
+import com.android.build.api.dsl.ApplicationDefaultConfig
+import com.android.build.api.dsl.CommonExtension
+import com.android.build.gradle.api.AndroidBasePlugin
+
 buildscript {
     ext {
         defaultPackageName = 'com.reveny.nativecheck'
         verCode = 661
         verName = '6.6.1'
-        androidTargetSdkVersion = 34
+        androidTargetSdkVersion = 35
         androidMinSdkVersion = 27
-        androidCompileSdkVersion = 34
-        androidCompileNdkVersion = '27.2.12479018'
-        androidSourceCompatibility = JavaVersion.VERSION_17
-        androidTargetCompatibility = JavaVersion.VERSION_17
-    }
-
-    repositories {
-        google()
-        mavenCentral()
-        maven { url "https://jitpack.io" }
-    }
-
-    dependencies {
-        classpath libs.gradle.plugin
-        classpath libs.kotlin.gradle.plugin
+        androidCompileSdkVersion = 35
+        androidCompileNdkVersion = '28.0.13004108'
+        androidSourceCompatibility = JavaVersion.VERSION_21
+        androidTargetCompatibility = JavaVersion.VERSION_21
     }
 }
 
 plugins {
-    alias(libs.plugins.materialthemebuilder) apply false
-    alias(libs.plugins.autoresconfig) apply false
+    alias(libs.plugins.agp.app) apply false
+    alias(libs.plugins.agp.lib) apply false
+    alias(libs.plugins.kotlin.android) apply false
+    alias(libs.plugins.kotlin.serialization) apply false
+    alias(libs.plugins.kotlin.parcelize) apply false
+    alias(libs.plugins.hilt) apply false
+    alias(libs.plugins.compose.compiler) apply false
+    alias(libs.plugins.ksp) apply false
 }
 
-allprojects {
-    repositories {
-        mavenCentral()
-        google()
-        maven { url "https://jitpack.io" }
+subprojects {
+    plugins.withType(AndroidBasePlugin).configureEach {
+        extensions.configure(CommonExtension) { ext ->
+            ext.compileSdk = androidCompileSdkVersion
+            ext.ndkVersion = androidCompileNdkVersion
+
+            ext.defaultConfig { config ->
+                config.minSdk = androidMinSdkVersion
+                if (config instanceof ApplicationDefaultConfig) {
+                    config.targetSdk = androidTargetSdkVersion
+                    config.versionCode = verCode
+                    config.versionName = verName
+                }
+            }
+
+            ext.lint {
+                abortOnError = true
+                checkReleaseBuilds = false
+            }
+
+            ext.compileOptions {
+                sourceCompatibility = androidSourceCompatibility
+                targetCompatibility = androidTargetCompatibility
+            }
+
+            ext.buildFeatures {
+                compose = true
+                buildConfig = true
+                prefab = true
+            }
+
+            ext.packaging.resources.excludes += [
+                "kotlin/**",
+                "org/**",
+                "**.properties",
+                "**.bin",
+                "**.proto",
+            ]
+        }
     }
-}
-
-tasks.register('clean', Delete) {
-    delete rootProject.buildDir
+    plugins.withType(JavaPlugin) {
+        extensions.configure(JavaPluginExtension) { ext ->
+            ext.sourceCompatibility = androidSourceCompatibility
+            ext.targetCompatibility = androidTargetCompatibility
+        }
+    }
 }
