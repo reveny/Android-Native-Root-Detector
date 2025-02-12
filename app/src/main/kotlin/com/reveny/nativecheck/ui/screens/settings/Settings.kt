@@ -59,7 +59,7 @@ fun Settings(
             item {
                 SettingItem(
                     title = stringResource(R.string.settings_app),
-                    description = "Language, and more",
+                    description = stringResource(R.string.settings_description_app),
                     icon = TablerIcons.Filled.Settings,
                     onClick = {
                         navController.navigate("App")
@@ -68,8 +68,8 @@ fun Settings(
             }
             item {
                 SettingItem(
-                    title = "Appearance",
-                    description = "Theme, color, and more",
+                    title = stringResource(R.string.settings_appearance),
+                    description = stringResource(R.string.settings_description_appearance),
                     icon = TablerIcons.Filled.Palette,
                     onClick = {
                         navController.navigate("Appearance")
