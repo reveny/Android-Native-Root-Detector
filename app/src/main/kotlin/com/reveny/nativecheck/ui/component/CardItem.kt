@@ -170,7 +170,7 @@ fun DetectionCard(
                             )
                         }
                 ) {
-                    Text("Details:", style = MaterialTheme.typography.titleSmall)
+                    Text(stringResource(R.string.detail), style = MaterialTheme.typography.titleSmall)
                     Spacer(modifier = Modifier.height(2.dp))
                     Text(detection.description, style = MaterialTheme.typography.bodyMedium)
                 }
@@ -241,7 +241,7 @@ fun SystemInfoCard(deviceInfo: String, androidVersion: String, kernelVersion: St
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "System :",
+            text = stringResource(R.string.sysinfo),
             style = MaterialTheme.typography.titleSmall,
         )
         Spacer(modifier = Modifier.height(8.dp))
@@ -282,7 +282,7 @@ fun AppInfoCard(
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "App :",
+            text = stringResource(R.string.appinfo),
             style = MaterialTheme.typography.titleSmall,
         )
         Spacer(modifier = Modifier.height(8.dp))
