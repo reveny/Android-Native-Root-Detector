@@ -7,17 +7,18 @@
     <string name="home_label">Home</string>
     <string name="settings_label">Settings</string>
     <string name="support_us">Support Us</string>
-
+    <string name="detail">Detail:</string>
     <string name="about_view_source_code"><![CDATA[Join our %1$s channel<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">About</string>
     <string name="true_a">True</string>
     <string name="false_a">False</string>
     <string name="true_b">True</string>
     <string name="false_b">False</string>
-    <string name="sysinfo">System Information</string>
+    <string name="sysinfo">System</string>
     <string name="sysinfo_device">Device: %s</string>
     <string name="sysinfo_android_version">Android Version: %s</string>
     <string name="sysinfo_kernel_version">Kernel Version: %s</string>
+    <string name="appinfo">App</string>
     <string name="appinfo_version">App Version: %s</string>
     <string name="appinfo_signature">App Signature: %s</string>
     <string name="appinfo_is_signature_valid">Signature Valid: %s</string>
