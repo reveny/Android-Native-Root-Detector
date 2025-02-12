@@ -1,6 +1,9 @@
 <resources>
     <string name="settings">设置</string>
     <string name="settings_app">应用</string>
+    <string name="settings_app_desc">语言以及应用行为相关设置</string>
+    <string name="settings_appearance">外观</string>
+    <string name="settings_appearance_desc">主题、暗色等显示相关设置</string>
     <string name="home_label">主页</string>
     <string name="settings_label">设置</string>
     <string name="support_us">支持我们</string>
@@ -28,12 +31,17 @@
 
     <!-- 设置相关 -->
     <string name="title_general">通用设置</string>
+    <string name="pref_language">语言</string>
     <string name="pref_telemetry">禁用遥测功能</string>
     <string name="pref_telemetry_on">遥测已关闭</string>
     <string name="pref_telemetry_off">不再收集和发送匿名统计数据</string>
     <string name="pref_experimental">启用实验性检测</string>
     <string name="pref_experimental_on">实验性检测已开启</string>
     <string name="pref_experimental_off">使用尚在实验阶段的检测项（需重启应用）</string>
+    <string name="pref_dynamic_color">动态取色</string>
+    <string name="pref_dynamic_color_desc">从壁纸中提取主题色</string>
+    <string name="pref_dark_theme">暗色模式</string>
+    <string name="pref_high_contrast">高对比度</string>
 
     <!-- 更新相关 -->
     <string name="failed_to_get_update_info">获取更新信息失败</string>
