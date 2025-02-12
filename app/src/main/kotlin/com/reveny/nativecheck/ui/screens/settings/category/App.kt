@@ -46,7 +46,7 @@ fun App(
             .nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
             LargeTopAppBar(
-                title = { Text("App") },
+                title = { Text(stringResource(R.string.settings_app)) },
                 scrollBehavior = scrollBehavior,
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
@@ -66,6 +66,7 @@ fun App(
         ) {
             item {
                 Language(
+                    title = stringResource(R.string.pref_language),
                     language = appSettings.language,
                     onLanguageChange = viewModel::setLanguage
                 )
