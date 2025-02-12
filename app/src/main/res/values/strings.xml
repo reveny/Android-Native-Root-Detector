@@ -1,6 +1,9 @@
 <resources>
     <string name="settings">Settings</string>
     <string name="settings_app">App</string>
+    <string name="settings_app_desc">Language, and more</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_appearance_desc">Theme, color, and more</string>
     <string name="home_label">Home</string>
     <string name="settings_label">Settings</string>
     <string name="support_us">Support Us</string>
@@ -28,12 +31,17 @@
 
     <!-- Preference Strings -->
     <string name="title_general">General</string>
+    <string name="pref_language">Language</string>
     <string name="pref_telemetry">Disable Telemetry</string>
     <string name="pref_telemetry_on">Sentry telemetry is disabled</string>
     <string name="pref_telemetry_off">This will disable Sentry telemetry</string>
     <string name="pref_experimental">Enable Experimental Detections</string>
     <string name="pref_experimental_on">Experimental detections are enabled</string>
     <string name="pref_experimental_off">This will enable experimental detections (restart required)</string>
+    <string name="pref_dynamic_color">Dynamic Color</string>
+    <string name="pref_dynamic_color_desc">Apply colors from wallpapers to the app theme</string>
+    <string name="pref_dark_theme">Dark Theme</string>
+    <string name="pref_high_contrast">High Contrast</string>
 
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Failed to fetch update information</string>
