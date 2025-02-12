@@ -31,7 +31,7 @@ class MainViewModel() : ViewModel() {
     private val _deviceInfo = MutableStateFlow("")
     val deviceInfo: StateFlow<String> = _deviceInfo
 
-    private val _androidVersion = MutableStateFlow("Android Version: " + Build.VERSION.RELEASE)
+    private val _androidVersion = MutableStateFlow(String.format(stringResource(R.string.sysinfo_android_version), Build.VERSION.RELEASE))
     val androidVersion: StateFlow<String> = _androidVersion
 
     private val _kernelVersion = MutableStateFlow("")
@@ -43,7 +43,7 @@ class MainViewModel() : ViewModel() {
     private val _signature = MutableStateFlow("")
     val signature: StateFlow<String> = _signature
 
-    private val _signatureValid = MutableStateFlow("Signature Valid: true")
+    private val _signatureValid = MutableStateFlow(String.format(stringResource(R.string.appinfo_is_signature_valid), stringResource(R.string.true_b)))
     val signatureValid: StateFlow<String> = _signatureValid
 
     val experimentalEnabled = MutableStateFlow("")
