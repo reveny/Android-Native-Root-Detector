@@ -59,7 +59,7 @@ fun Settings(
             item {
                 SettingItem(
                     title = stringResource(R.string.settings_app),
-                    description = stringResource(R.string.settings_description_app),
+                    description = stringResource(R.string.settings_app_desc),
                     icon = TablerIcons.Filled.Settings,
                     onClick = {
                         navController.navigate("App")
@@ -69,7 +69,7 @@ fun Settings(
             item {
                 SettingItem(
                     title = stringResource(R.string.settings_appearance),
-                    description = stringResource(R.string.settings_description_appearance),
+                    description = stringResource(R.string.settings_appearance_desc),
                     icon = TablerIcons.Filled.Palette,
                     onClick = {
                         navController.navigate("Appearance")
