@@ -1,13 +1,13 @@
 <resources>
     <string name="settings">设置</string>
-    <string name="settings_app">应用</string>
+    <string name="settings_app">通用</string>
     <string name="settings_app_desc">语言以及应用行为相关设置</string>
     <string name="settings_appearance">外观</string>
     <string name="settings_appearance_desc">主题、暗色等显示相关设置</string>
     <string name="home_label">主页</string>
     <string name="settings_label">设置</string>
-    <string name="support_us">支持我们</string>
-
+    <string name="support_us">支持作者</string>
+    <string name="detail">详情：</string>
     <string name="about_view_source_code"><![CDATA[加入我们的 %1$s 频道<br/><br>版权所有 © %2$s<br/>]]></string>
     <string name="About">关于</string>
     <string name="true_a">开</string>
@@ -15,9 +15,10 @@
     <string name="true_b">是</string>
     <string name="false_b">否</string>
     <string name="sysinfo">系统信息</string>
-    <string name="sysinfo_device">设备：%s</string>
+    <string name="sysinfo_device">设备型号：%s</string>
     <string name="sysinfo_android_version">安卓版本：%s</string>
     <string name="sysinfo_kernel_version">内核版本：%s</string>
+    <string name="appinfo">应用信息</string>
     <string name="appinfo_version">应用版本：%s</string>
     <string name="appinfo_signature">应用签名：%s</string>
     <string name="appinfo_is_signature_valid">签名有效：%s</string>
