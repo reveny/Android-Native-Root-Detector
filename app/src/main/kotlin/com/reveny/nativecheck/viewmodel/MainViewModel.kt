@@ -53,12 +53,12 @@ class MainViewModel() : ViewModel() {
 
     fun initializeData(context: Context) {
         viewModelScope.launch {
-            _deviceInfo.value = String.format(context.getString(R.string.sysinfo_android_version), getDevice())
+            _deviceInfo.value = String.format(context.getString(R.string.sysinfo_device), getDevice())
             _androidVersion.value = String.format(context.getString(R.string.sysinfo_android_version), Build.VERSION.RELEASE)
             _kernelVersion.value = String.format(context.getString(R.string.sysinfo_kernel_version), getKernelVersion())
             _appVersion.value = String.format(context.getString(R.string.appinfo_version), getAppVersion(context))
             _signature.value = String.format(context.getString(R.string.appinfo_signature), getSignature(context))
-            _signatureValid.value = String.format(context.getString(R.string.appinfo_is_signature_valid), context.getString(R.string.true_b))
+            _signatureValid.value = String.format(context.getString(R.string.appinfo_is_signature_valid), context.getString(R.string.true_a))
         }
     }
 
