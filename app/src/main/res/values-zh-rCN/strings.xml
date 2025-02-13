@@ -47,8 +47,7 @@
     <!-- 更新相关 -->
     <string name="failed_to_get_update_info">获取更新信息失败</string>
     <string name="update_available">发现新版本</string>
-    <string name="version_is_available_1">版本 </string>
-    <string name="version_is_available_2"> 已发布。是否立即下载？</string>
+    <string name="version_is_available">版本 %s 已发布。是否立即下载？</string>
     <string name="update_confirm">好的</string>
     <string name="update_cancel">取消</string>
     <string name="update_downloading">正在下载更新</string>
