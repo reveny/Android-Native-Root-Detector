@@ -5,6 +5,8 @@
     <string name="en" translatable="false">English</string>
     <string name="ar" translatable="false">Arabic</string>
     <string name="de" translatable="false">German</string>
+    <string name="es" translatable="false">Spanish</string>
+    <string name="id" translatable="false">Indonesian</string>
     <string name="pl" translatable="false">Polish</string>
     <string name="pt_br" translatable="false">Portuguese (Brazil)</string>
     <string name="ru" translatable="false">Russian</string>
