@@ -29,7 +29,6 @@ private val Languages = LanguageItem.entries.toTypedArray()
 
 @Composable
 internal fun Language(
-    title: String,
     language: Language,
     onLanguageChange: (Language) -> Unit,
 ) {
@@ -38,7 +37,7 @@ internal fun Language(
 
     Box {
         SettingNormalItem(
-            title = stringResource(R.string.language),
+            title = stringResource(R.string.pref_language),
             icon = TablerIcons.Outline.Language,
             description = Languages.find { it.value == language }?.text?.let { stringResource(it) },
             onClick = { expanded = true }
