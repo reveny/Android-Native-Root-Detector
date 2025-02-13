@@ -29,6 +29,7 @@ private val Languages = LanguageItem.entries.toTypedArray()
 
 @Composable
 internal fun Language(
+    title: String,
     language: Language,
     onLanguageChange: (Language) -> Unit,
 ) {
