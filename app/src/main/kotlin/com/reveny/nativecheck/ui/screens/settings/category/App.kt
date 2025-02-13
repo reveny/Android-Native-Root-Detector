@@ -66,7 +66,6 @@ fun App(
         ) {
             item {
                 Language(
-                    title = stringResource(R.string.pref_language),
                     language = appSettings.language,
                     onLanguageChange = viewModel::setLanguage
                 )
