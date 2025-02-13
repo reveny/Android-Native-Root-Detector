@@ -58,7 +58,7 @@ class MainViewModel() : ViewModel() {
             _kernelVersion.value = String.format(context.getString(R.string.sysinfo_kernel_version), getKernelVersion())
             _appVersion.value = String.format(context.getString(R.string.appinfo_version), getAppVersion(context))
             _signature.value = String.format(context.getString(R.string.appinfo_signature), getSignature(context))
-            _signatureValid.value = String.format(context.getString(R.string.appinfo_is_signature_valid), context.getString(R.string.true_a))
+            _signatureValid.value = String.format(context.getString(R.string.appinfo_is_signature_valid), context.getString(R.string.true_b))
         }
     }
 
@@ -66,7 +66,7 @@ class MainViewModel() : ViewModel() {
         viewModelScope.launch {
             _isLoading.value = true
 
-            experimentalEnabled.value = String.format(context.getString(R.string.experimental_detections), enableExperimental.toString())
+            experimentalEnabled.value = String.format(context.getString(R.string.experimental_detections), if (enableExperimental) context.getString(R.string.true_a) else context.getString(R.string.false_a))
 
             if (_detections.value.isNotEmpty()) {
                 _isLoading.value = false
