@@ -1,9 +1,9 @@
 <resources>
-    <string name="settings">Settings</string>
+    <string name="settings">Einstellungen</string>
     <string name="settings_app">App</string>
     <string name="home_label">Home</string>
-    <string name="settings_label">Settings</string>
-    <string name="support_us">Support Us</string>
+    <string name="settings_label">Einstellungen</string>
+    <string name="support_us">Unterstütze uns</string>
 
     <string name="about_view_source_code"><![CDATA[Trete unserem Kanal %1$s bei<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">Über</string>
@@ -20,11 +20,11 @@
     <string name="appinfo_is_signature_valid">Signatur Gültig: %s</string>
     <string name="appinfo_unknown_version">UNBEKANNT</string>
     <string name="experimental_detections">Experimentelle Erkennungen: %s</string>
-    <string name="DayNight">Dunkler Modus</string>
-    <string name="the_environment_is_normal">Die Umgebung ist normal</string>
-    <string name="the_environment_is_abnormal">Die Umgebung ist anormal</string>
-    <string name="description_normal">In der Umgebung sind keine Veränderungen festzustellen.</string>
-    <string name="description_abnormal">Es wurden Veränderungen in der Umgebung festgestellt.</string>
+    <string name="DayNight">Dunkles Design</string>
+    <string name="the_environment_is_normal">Das System scheint normal</string>
+    <string name="the_environment_is_abnormal">Das System scheint manipuliert</string>
+    <string name="description_normal">Am System sind keine Veränderungen festzustellen.</string>
+    <string name="description_abnormal">Es wurden Veränderungen am System festgestellt.</string>
 
     <!-- Preference Strings -->
     <string name="title_general">Allgemein</string>
@@ -33,13 +33,12 @@
     <string name="pref_telemetry_off">Dadurch wird die Sentry-Telemetrie deaktiviert.</string>
     <string name="pref_experimental">Experimentelle Erkennungen einschalten</string>
     <string name="pref_experimental_on">Experimentelle Erkennungen sind eingeschaltet</string>
-    <string name="pref_experimental_off">Dies aktiviert die experimentelle Erkennung (restart required)</string>
+    <string name="pref_experimental_off">Dies aktiviert die experimentelle Erkennung (neustart erforderlich)</string>
 
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Aktualisierungsinformationen konnten nicht abgerufen werden</string>
     <string name="update_available">Aktualisierung verfügbar</string>
-    <string name="version_is_available_1">Version </string>
-    <string name="version_is_available_2"> ist verfügbar. Möchten Sie es jetzt herunterladen?</string>
+    <string name="version_is_available">Version %s ist verfügbar. Möchtest du sie gleich herunterladen?</string>
     <string name="update_confirm">OK</string>
     <string name="update_cancel">Abbruch</string>
     <string name="update_downloading">Aktualisierung wird heruntergeladen</string>
@@ -55,7 +54,7 @@
     <string name="detected_magisk">Magisk erkannt</string>
     <string name="detected_zygisk_assistant">Zygisk-Assistant erkannt</string>
     <string name="bootloader_unlocked">Bootloader Entsperrt</string>
-    <string name="oem_unlocking_enabled">OEM Unlocking aktiviert</string>
+    <string name="oem_unlocking_enabled">OEM Entsperrung aktiviert</string>
     <string name="detected_zygisk_official_magisk">Zygisk entdeckt (Official Magisk)</string>
     <string name="detected_zygisk_next">Zygisk Next erkannt (%s)</string>
     <string name="debug_fingerprint_detected">Debug-Fingerabdruck erkannt (%s)</string>
@@ -65,7 +64,7 @@
     <string name="detected_magisk_module">Magisk Modul erkannt</string>
     <string name="found_injection">Injektion gefunden</string>
     <string name="detected_lsposed">LSPosed erkannt (%s)</string>
-    <string name="no_system_apps_found">Keine System App gefunden</string>
+    <string name="no_system_apps_found">Keine System Apps gefunden</string>
     <string name="detected_lineageos">LineageOS erkannt (%s)</string>
     <string name="no_info_given">Keine Information angegeben</string>
     <string name="detected_modified_hosts_file">Modifizierte Hosts Datei gefunden</string>
@@ -79,14 +78,14 @@
     <string name="detected_root_solution">Root Lösung erkannt</string>
     <string name="detected_hide_my_applist">Hide My Applist erkannt</string>
     <string name="detected_ksu_ap_modules_img">KSU/AP Modul.img erkannt</string>
-    <string name="detected_custom_rom">Erkannte Custom ROM (%s)</string>
+    <string name="detected_custom_rom">Custom ROM Erkannt (%s)</string>
     <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil enthält lineage</string>
     <string name="detected_gapps">GApps erkannt</string>
     <string name="detected_custom_kernel">Custom Kernel erkannt</string>
     <string name="detected_framework_patch">Framework Patch gefunden</string>
     <string name="detected_overlayfs">OverlayFS erkannt</string>
-    <string name="detected_overlay_mounted">overlay mounted erkannt</string>
-    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay mounted aber mount kann versteckt sein</string>
+    <string name="detected_overlay_mounted">Overlay mount erkannt</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay mount erkannt, möglicher weise versteckt</string>
     <string name="detected_risky_app">Riskante App erkannt</string>
     <string name="hide_my_applist_is_likely_used">Hide My Applist wird wahrscheinlich verwendet</string>
     <string name="addon_d_or_install_recovery_sh_exists">Addon.d oder install-recovery.sh existiert</string>
