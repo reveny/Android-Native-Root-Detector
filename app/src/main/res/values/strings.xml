@@ -8,7 +8,7 @@
     <string name="home_label">Home</string>
     <string name="settings_label">Settings</string>
     <string name="support_us">Support Us</string>
-    <string name="detail">Detail:</string>
+    <string name="detail">Details:</string>
     <string name="about_view_source_code"><![CDATA[Join our %1$s channel<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">About</string>
     <!-- _a & _b are set for certain languages -->
