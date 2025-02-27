@@ -49,19 +49,20 @@
     <string name="pref_high_contrast">Υψηλή Αντίθεση</string>
 
     <!-- Language Strings -->
-    <string name="en">English</string>
-    <string name="ar">Arabic</string>
-    <string name="de">German</string>
-    <string name="el">Greek</string>
-    <string name="es">Spanish</string>
-    <string name="id">Indonesian</string>
-    <string name="pl">Polish</string>
-    <string name="pt_br">Portuguese (Brazil)</string>
-    <string name="ru">Russian</string>
-    <string name="sl">Slovenian</string>
-    <string name="tr_tr">Turkish (Turkey)</string>
-    <string name="vi">Vietnamese</string>
-    <string name="zh_cn">Chinese (Simplified)</string>
+    <string name="en">Αγγλικά</string>
+    <string name="ar">Αραβικά</string>
+    <string name="de">Γερμανικά</string>
+    <string name="el">Ελληνικά</string>
+    <string name="es">Ισπανικά</string>
+    <string name="id">Ινδονησιακά</string>
+    <string name="pl">Πολωνικά</string>
+    <string name="pt_br">Πορτογαλικά (Βραζιλία)</string>
+    <string name="ru">Ρωσικά</string>
+    <string name="sl">Σλοβενικά</string>
+    <string name="tr_tr">Τουρκικά (Τουρκία)</string>
+    <string name="vi">Βιετναμέζικα</string>
+    <string name="zh_cn">Κινεζικά (Απλοποιημένα)</string>
+    <string name="zh_tw">Κινεζικά (Παραδοσιακά)</string>
     
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Αποτυχία λήψης πληροφοριών ενημέρωσης</string>
