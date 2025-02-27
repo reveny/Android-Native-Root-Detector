@@ -57,6 +57,7 @@
     <string name="tr_tr">土耳其语（土耳其）</string>
     <string name="vi">越南语</string>
     <string name="zh_cn">简体中文</string>
+    <string name="zh_tw">繁体中文</string>
     
     <!-- 更新相关 -->
     <string name="failed_to_get_update_info">获取更新信息失败</string>
