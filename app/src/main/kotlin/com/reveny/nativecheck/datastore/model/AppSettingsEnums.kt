@@ -26,6 +26,8 @@ enum class Language {
     ENGLISH,
     ARABIC,
     GERMAN,
+    SPANISH,
+    INDONESIAN,
     POLISH,
     PORTUGUESE_BRAZIL,
     RUSSIAN,

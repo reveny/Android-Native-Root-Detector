@@ -31,7 +31,7 @@ class MainViewModel() : ViewModel() {
     private val _deviceInfo = MutableStateFlow("")
     val deviceInfo: StateFlow<String> = _deviceInfo
 
-    private val _androidVersion = MutableStateFlow("Android Version: " + Build.VERSION.RELEASE)
+    private val _androidVersion = MutableStateFlow("")
     val androidVersion: StateFlow<String> = _androidVersion
 
     private val _kernelVersion = MutableStateFlow("")
@@ -43,7 +43,7 @@ class MainViewModel() : ViewModel() {
     private val _signature = MutableStateFlow("")
     val signature: StateFlow<String> = _signature
 
-    private val _signatureValid = MutableStateFlow("Signature Valid: true")
+    private val _signatureValid = MutableStateFlow("")
     val signatureValid: StateFlow<String> = _signatureValid
 
     val experimentalEnabled = MutableStateFlow("")
@@ -53,10 +53,12 @@ class MainViewModel() : ViewModel() {
 
     fun initializeData(context: Context) {
         viewModelScope.launch {
-            _deviceInfo.value = String.format(context.getString(R.string.sysinfo_android_version), getDevice())
+            _deviceInfo.value = String.format(context.getString(R.string.sysinfo_device), getDevice())
+            _androidVersion.value = String.format(context.getString(R.string.sysinfo_android_version), Build.VERSION.RELEASE)
             _kernelVersion.value = String.format(context.getString(R.string.sysinfo_kernel_version), getKernelVersion())
-            _signature.value = String.format(context.getString(R.string.appinfo_signature), getSignature(context))
             _appVersion.value = String.format(context.getString(R.string.appinfo_version), getAppVersion(context))
+            _signature.value = String.format(context.getString(R.string.appinfo_signature), getSignature(context))
+            _signatureValid.value = String.format(context.getString(R.string.appinfo_is_signature_valid), context.getString(R.string.true_b))
         }
     }
 
@@ -64,7 +66,7 @@ class MainViewModel() : ViewModel() {
         viewModelScope.launch {
             _isLoading.value = true
 
-            experimentalEnabled.value = String.format(context.getString(R.string.experimental_detections), enableExperimental.toString())
+            experimentalEnabled.value = String.format(context.getString(R.string.experimental_detections), if (enableExperimental) context.getString(R.string.true_a) else context.getString(R.string.false_a))
 
             if (_detections.value.isNotEmpty()) {
                 _isLoading.value = false
