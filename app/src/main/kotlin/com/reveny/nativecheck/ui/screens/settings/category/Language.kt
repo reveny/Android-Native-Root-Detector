@@ -81,4 +81,5 @@ private enum class LanguageItem(
     TURKISH_TURKEY(Language.TURKISH_TURKEY, Locale("tr", "TR"), R.string.tr_tr),
     VIETNAMESE(Language.VIETNAMESE, Locale("vi"), R.string.vi),
     CHINESE_SIMPLIFIED(Language.CHINESE_SIMPLIFIED, Locale("zh", "CN"), R.string.zh_cn),
+    CHINESE_TRADITIONAL(Language.CHINESE_TRADITIONAL, Locale("zh", "TW"), R.string.zh_tw),
 }
