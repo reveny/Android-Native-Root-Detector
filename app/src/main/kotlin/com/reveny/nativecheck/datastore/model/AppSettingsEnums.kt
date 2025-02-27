@@ -35,4 +35,5 @@ enum class Language {
     TURKISH_TURKEY,
     VIETNAMESE,
     CHINESE_SIMPLIFIED
+    CHINESE_TRADITIONAL
 }
