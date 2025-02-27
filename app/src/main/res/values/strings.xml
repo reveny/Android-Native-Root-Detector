@@ -61,6 +61,7 @@
     <string name="tr_tr">Turkish (Turkey)</string>
     <string name="vi">Vietnamese</string>
     <string name="zh_cn">Chinese (Simplified)</string>
+    <string name="zh_tw">Chinese (Traditional)</string>
 
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Failed to fetch update information</string>
