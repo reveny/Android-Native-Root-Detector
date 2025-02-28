@@ -106,7 +106,7 @@
     <string name="detected_custom_rom">檢測到非原廠 ROM（%s）</string>
     <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil 包含「lineage」</string>
     <string name="detected_gapps">檢測到 GApps</string>
-    <string name="detected_custom_kernel">檢測到非官方內核</string>
+    <string name="detected_custom_kernel">檢測到非官方核心</string>
     <string name="detected_framework_patch">檢測到框架補丁</string>
     <string name="detected_overlayfs">檢測到 OverlayFS</string>
     <string name="detected_overlay_mounted">檢測到 Overlay 已掛載</string>
