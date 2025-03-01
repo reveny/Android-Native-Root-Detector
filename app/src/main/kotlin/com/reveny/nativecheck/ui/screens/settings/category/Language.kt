@@ -74,6 +74,7 @@ private enum class LanguageItem(
     GERMAN(Language.GERMAN, Locale("de"), R.string.de),
     SPANISH(Language.SPANISH, Locale("es"), R.string.es),
     INDONESIAN(Language.INDONESIAN, Locale("id"), R.string.id),
+    JAPANESE(Language.JAPANESE, Locale("ja"), R.string.ja),
     POLISH(Language.POLISH, Locale("pl"), R.string.pl),
     PORTUGUESE_BRAZIL(Language.PORTUGUESE_BRAZIL, Locale("pt", "BR"), R.string.pt_br),
     RUSSIAN(Language.RUSSIAN, Locale("ru"), R.string.ru),
