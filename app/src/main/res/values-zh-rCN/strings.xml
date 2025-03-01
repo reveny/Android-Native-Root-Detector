@@ -68,8 +68,8 @@
     <string name="update_cancel">取消</string>
     <string name="update_downloading">正在下载更新</string>
     <string name="update_wait">请稍候……</string>
-    <string name="download_failed">下载失败：</string>
-    <string name="error">错误：</string>
+    <string name="download_failed">下载失败：%s</string>
+    <string name="error">错误：%s</string>
     <string name="unable_to_install">没有能够安装 APK 的应用程序</string>
 
     <!-- 检测相关 -->
