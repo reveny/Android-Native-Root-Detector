@@ -49,8 +49,10 @@
     <string name="en">Inggris</string>
     <string name="ar">Arab</string>
     <string name="de">Jerman</string>
+    <string name="el">Yunani</string>
     <string name="es">Spanyol</string>
     <string name="id">Indonesia</string>
+    <string name="ja">Jepang</string>
     <string name="pl">Polandia</string>
     <string name="pt_br">Portugis (Brasil)</string>
     <string name="ru">Rusia</string>
@@ -58,6 +60,7 @@
     <string name="tr_tr">Turki</string>
     <string name="vi">Vietnam</string>
     <string name="zh_cn">Mandarin (Sederhana)</string>
+    <string name="zh_tw">Mandarin (Tradisional)</string>
 
     <!-- String Pembaruan -->
     <string name="failed_to_get_update_info">Gagal mengambil informasi pembaruan</string>
