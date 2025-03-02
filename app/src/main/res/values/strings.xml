@@ -54,6 +54,7 @@
     <string name="de">German</string>
     <string name="es">Spanish</string>
     <string name="id">Indonesian</string>
+    <string name="ja">Japanese</string>
     <string name="pl">Polish</string>
     <string name="pt_br">Portuguese (Brazil)</string>
     <string name="ru">Russian</string>
@@ -61,6 +62,7 @@
     <string name="tr_tr">Turkish (Turkey)</string>
     <string name="vi">Vietnamese</string>
     <string name="zh_cn">Chinese (Simplified)</string>
+    <string name="zh_tw">Chinese (Traditional)</string>
 
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Failed to fetch update information</string>
