@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name" translatable="false">Native Detector</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="settings_app">Εφαρμογή</string>
+    <string name="settings_app_desc">Γλώσσα, και περισσότερα</string>
+    <string name="settings_appearance">Εμφάνιση</string>
+    <string name="settings_appearance_desc">Θέμα, χρώμα, και περισσότερα</string>
+    <string name="home_label">Αρχική</string>
+    <string name="settings_label">Ρυθμίσεις</string>
+    <string name="support_us">Υποστηρίξτε Μας</string>
+    <string name="detail">Λεπτομέρειες:</string>
+    <string name="about_view_source_code"><![CDATA[Εγγραφείτε στο κανάλι μας %1$s<br/><br>Copyright © %2$s<br/>]]></string>
+    <string name="About">Σχετικά με</string>
+    <!-- _a & _b are set for certain languages -->
+    <string name="true_a">Αληθής</string>
+    <string name="false_a">Ψευδής</string>
+    <!-- _a is for experimental detection status -->
+    <string name="true_b">Αληθής</string>
+    <string name="false_b">Ψευδής</string>
+    <!-- _b is for signature valid status -->
+    <string name="sysinfo">Σύστημα</string>
+    <string name="sysinfo_device">Συσκευή: %s</string>
+    <string name="sysinfo_android_version">Έκδοση Android: %s</string>
+    <string name="sysinfo_kernel_version">Έκδοση Πυρήνα: %s</string>
+    <string name="appinfo">Εφαρμογή</string>
+    <string name="appinfo_version">Έκδοση Εφαρμογής: %s</string>
+    <string name="appinfo_signature">Υπογραφή Εφαρμογής: %s</string>
+    <string name="appinfo_is_signature_valid">Έγκυρη Υπογραφή: %s</string>
+    <string name="appinfo_unknown_version">ΆΓΝΩΣΤΗ</string>
+    <string name="experimental_detections">Πειραματικές Ανιχνεύσεις: %s</string>
+    <string name="DayNight">Σκοτεινή Λειτουργία</string>
+    <string name="the_environment_is_normal">Το Περιβάλλον είναι φυσιολογικό</string>
+    <string name="the_environment_is_abnormal">Το Περιβάλλον είναι μη φυσιολογικό</string>
+    <string name="description_normal">Δεν εντοπίζονται τροποποιήσεις στο περιβάλλον.</string>
+    <string name="description_abnormal">Εντοπίζονται τροποποιήσεις στο περιβάλλον.</string>
+    
+    <!-- Preference Strings -->
+    <string name="title_general">Γενικά</string>
+    <string name="pref_language">Γλώσσα</string>
+    <string name="pref_telemetry">Απενεργοποίηση Τηλεμετρίας</string>
+    <string name="pref_telemetry_on">Η τηλεμετρία φύλαξης είναι απενεργοποιημένη</string>
+    <string name="pref_telemetry_off">Αυτό θα απενεργοποιήσει την τηλεμετρία φύλαξης</string>
+    <string name="pref_experimental">Ενεργοποίηση Πειραματικών Ανιχνεύσεων</string>
+    <string name="pref_experimental_on">Οι Πειραματικές ανιχνεύσεις είναι ενεργοποιημένες</string>
+    <string name="pref_experimental_off">Αυτό θα ενεργοποιήσει τις πειραματικές ανιχνεύσεις (απαιτείται επανεκκίνηση)</string>
+    <string name="pref_dynamic_color">Δυναμικό Χρώμα</string>
+    <string name="pref_dynamic_color_desc">Εφαρμογή χρωμάτων από ταπετσαρίες στο θέμα της εφαρμογής</string>
+    <string name="pref_dark_theme">Σκοτεινό Θέμα</string>
+    <string name="pref_high_contrast">Υψηλή Αντίθεση</string>
+
+    <!-- Language Strings -->
+    <string name="en">Αγγλικά</string>
+    <string name="ar">Αραβικά</string>
+    <string name="de">Γερμανικά</string>
+    <string name="el">Ελληνικά</string>
+    <string name="es">Ισπανικά</string>
+    <string name="id">Ινδονησιακά</string>
+    <string name="ja">Ιαπωνικά</string>
+    <string name="pl">Πολωνικά</string>
+    <string name="pt_br">Πορτογαλικά (Βραζιλία)</string>
+    <string name="ru">Ρωσικά</string>
+    <string name="sl">Σλοβενικά</string>
+    <string name="tr_tr">Τουρκικά (Τουρκία)</string>
+    <string name="vi">Βιετναμέζικα</string>
+    <string name="zh_cn">Κινεζικά (Απλοποιημένα)</string>
+    <string name="zh_tw">Κινεζικά (Παραδοσιακά)</string>
+    
+    <!-- Update Strings -->
+    <string name="failed_to_get_update_info">Αποτυχία λήψης πληροφοριών ενημέρωσης</string>
+    <string name="update_available">Διαθέσιμη Ενημέρωση</string>
+    <string name="version_is_available">Η έκδοση %s είναι διαθέσιμη. Θέλετε να την κατεβάσετε τώρα?</string>
+    <string name="update_confirm">OK</string>
+    <string name="update_cancel">Ακύρωση</string>
+    <string name="update_downloading">Λήψη Ενημέρωσης</string>
+    <string name="update_wait">Παρακαλώ περιμένετε…</string>
+    <string name="download_failed">Η λήψη απέτυχε: %s</string>
+    <string name="error">Σφάλμα: %s</string>
+    <string name="unable_to_install">Δεν υπάρχει διαθέσιμη εφαρμογή για εγκατάσταση APK</string>
+
+    <!-- Detection Strings -->
+    <string name="modified_environment_detected">Εντοπίστηκε Τροποποιημένο Περιβάλλον</string>
+    <string name="suspicious_mount_detected">Εντοπίστηκε Ύποπτη Προσάρτηση</string>
+    <string name="detected_kernelsu_magisk">Εντοπίστηκε KernelSU/Magisk</string>
+    <string name="detected_magisk">Εντοπίστηκε Magisk</string>
+    <string name="detected_zygisk_assistant">Εντοπίστηκε Zygisk-Assistant</string>
+    <string name="bootloader_unlocked">Ξεκλειδωμένο Bootloader</string>
+    <string name="oem_unlocking_enabled">Ενεργοποιήθηκε το ξεκλείδωμα OEM</string>
+    <string name="detected_zygisk_official_magisk">Εντοπίστηκε Zygisk (Επίσημο Magisk)</string>
+    <string name="detected_zygisk_next">Εντοπίστηκε Zygisk Next (%s)</string>
+    <string name="debug_fingerprint_detected">Εντοπίστηκε δακτυλικό αποτύπωμα εντοπισμού σφαλμάτων (%s)</string>
+    <string name="found_magisk_recovery_file">Βρέθηκε Αρχείο Magisk/Recovery</string>
+    <string name="found_su_binary">Βρέθηκε SU Binary</string>
+    <string name="detected_zygisk">Εντοπίστηκε Zygisk</string>
+    <string name="detected_magisk_module">Εντοπίστηκε Ενότητα Magisk</string>
+    <string name="found_injection">Βρέθηκε Έγχυση</string>
+    <string name="detected_lsposed">Εντοπίστηκε LSPosed (%s)</string>
+    <string name="no_system_apps_found">Δεν βρέθηκαν εφαρμογές συστήματος</string>
+    <string name="detected_lineageos">Εντοπίστηκε LineageOS (%s)</string>
+    <string name="no_info_given">Δεν δίνονται πληροφορίες</string>
+    <string name="detected_modified_hosts_file">Εντοπίστηκε τροποποιημένο αρχείο Hosts</string>
+    <string name="detected_resetprop">Εντοπίστηκε Resetprop</string>
+    <string name="tee_is_broken">Το ΤΕΕ είναι σπασμένο</string>
+    <string name="keybox_revoked_by_google">Το Keybox %s ανακλήθηκε από την Google</string>
+    <string name="key_attestation_failed">Βεβαίωση Κλειδιού απέτυχε</string>
+    <string name="detected_abnormal_boot_state">Εντοπίστηκε Μη Φυσιολογική Κατάσταση Εκκίνησης</string>
+    <string name="detected_leaked_keybox">Εντοπίστηκε Διαρροή Keybox</string>
+    <string name="detected_mount_abnormality">Εντοπίστηκε Μη Φυσιολογική Προσάρτηση</string>
+    <string name="detected_root_solution">Εντοπίστηκε Λύση Root</string>
+    <string name="detected_hide_my_applist">Εντοπίστηκε Hide My Applist</string>
+    <string name="detected_ksu_ap_modules_img">Εντοπίστηκε KSU/AP modules.img</string>
+    <string name="detected_custom_rom">Εντοπίστηκε Προσαρμοσμένη ROM (%s)</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil περιέχει lineage</string>
+    <string name="detected_gapps">Εντοπίστηκε GApps</string>
+    <string name="detected_custom_kernel">Εντοπίστηκε Προσαρμοσμένος Kernel</string>
+    <string name="detected_framework_patch">Εντοπίστηκε Επιδιόρθωση Framework</string>
+    <string name="detected_overlayfs">Εντοπίστηκε OverlayFS</string>
+    <string name="detected_overlay_mounted">Εντοπίστηκε Προσάρτηση Overlay</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Το Overlay προσαρτήθηκε αλλά η προσάρτηση μπορεί να είναι κρυφή</string>
+    <string name="detected_risky_app">Εντοπίστηκε Επικίνδυνη Εφαρμογή</string>
+    <string name="hide_my_applist_is_likely_used">Το Hide My Applist είναι πιθανό να χρησιμοποιείται</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Υπάρχει το Addon.d ή install-recovery.sh</string>
+    <string name="detected_root_app">Εντοπίστηκε Εφαρμογή Root</string>
+    <string name="detected_mount_inconsistency">Εντοπίστηκε Ασυνέπεια Προσάρτησης</string>
+    <string name="umount_detected">Εντοπίστηκε Αποπροσάρτηση</string>
+</resources>
