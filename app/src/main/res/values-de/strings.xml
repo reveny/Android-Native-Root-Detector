@@ -1,10 +1,11 @@
 <resources>
     <string name="settings">Einstellungen</string>
-    <string name="settings_app">App</string>
+    <string name="settings_appearance_desc">Design, Farben und mehr</string>
     <string name="home_label">Home</string>
     <string name="settings_label">Einstellungen</string>
     <string name="support_us">Unterstütze uns</string>
 
+    <string name="detail">Details:</string>
     <string name="about_view_source_code"><![CDATA[Trete unserem Kanal %1$s bei<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">Über</string>
     <string name="true_a">Richtig</string>
@@ -15,6 +16,7 @@
     <string name="sysinfo_device">Gerät: %s</string>
     <string name="sysinfo_android_version">Android Version: %s</string>
     <string name="sysinfo_kernel_version">Kernel Version: %s</string>
+    <string name="appinfo">App</string>
     <string name="appinfo_version">App Version: %s</string>
     <string name="appinfo_signature">App Signatur: %s</string>
     <string name="appinfo_is_signature_valid">Signatur Gültig: %s</string>
@@ -28,6 +30,7 @@
 
     <!-- Preference Strings -->
     <string name="title_general">Allgemein</string>
+    <string name="pref_language">Sprache</string>
     <string name="pref_telemetry">Telemetrie deaktivieren</string>
     <string name="pref_telemetry_on">Sentry-Telemetrie ist deaktiviert</string>
     <string name="pref_telemetry_off">Dadurch wird die Sentry-Telemetrie deaktiviert.</string>
@@ -36,6 +39,7 @@
     <string name="pref_experimental_off">Dies aktiviert die experimentelle Erkennung (neustart erforderlich)</string>
 
     <!-- Update Strings -->
+    <string name="zh_cn">Chinesisch (vereinfacht)</string>
     <string name="failed_to_get_update_info">Aktualisierungsinformationen konnten nicht abgerufen werden</string>
     <string name="update_available">Aktualisierung verfügbar</string>
     <string name="version_is_available">Version %s ist verfügbar. Möchtest du sie gleich herunterladen?</string>
@@ -92,4 +96,22 @@
     <string name="detected_root_app">Root App erkannt</string>
     <string name="detected_mount_inconsistency">Mount Unstimmigkeiten erkannt</string>
     <string name="umount_detected">Umount erkannt</string>
+    <string name="settings_app">App</string>
+    <string name="settings_app_desc">Sprache und mehr</string>
+    <string name="settings_appearance">Erscheinungsbild</string>
+    <string name="pref_dynamic_color">Dynamische Farben</string>
+    <string name="pref_dynamic_color_desc">Farben des Hintergrundbildes benutzen</string>
+    <string name="pref_dark_theme">Dunkles Design</string>
+    <string name="pref_high_contrast">Hoher Kontrast</string>
+    <string name="en">Englisch</string>
+    <string name="ar">Arabisch</string>
+    <string name="de">Deutsch</string>
+    <string name="es">Spanisch</string>
+    <string name="id">Indonesisch</string>
+    <string name="pl">Polnisch</string>
+    <string name="pt_br">Portugiesisch</string>
+    <string name="ru">Russisch</string>
+    <string name="sl">Slowenisch</string>
+    <string name="tr_tr">Türkisch</string>
+    <string name="vi">Vietnamesisch</string>
 </resources>

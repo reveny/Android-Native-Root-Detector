@@ -100,7 +100,7 @@ fun Appearance(
             .nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
             LargeTopAppBar(
-                title = { Text("Appearance") },
+                title = { Text(stringResource(R.string.settings_appearance)) },
                 scrollBehavior = scrollBehavior,
                 navigationIcon = { NavBackButton(navController) },
             )
@@ -127,8 +127,8 @@ fun Appearance(
             }
             item {
                 SettingSwitchItem(
-                    title = "Dynamic Color",
-                    description = "Apply colors from wallpapers to the app theme",
+                    title = stringResource(R.string.pref_dynamic_color),
+                    description = stringResource(R.string.pref_dynamic_color_desc),
                     icon = TablerIcons.Outline.TestPipe,
                     isChecked = appSettings.dynamicColor,
                     onClick = { viewModel.setDynamicColor(!appSettings.dynamicColor) }
@@ -136,7 +136,7 @@ fun Appearance(
             }
             item {
                 SettingSwitchItem(
-                    title = "Dark theme",
+                    title = stringResource(R.string.pref_dark_theme),
                     icon = TablerIcons.Outline.Moon,
                     isChecked = appSettings.darkTheme,
                     onClick = { viewModel.setDarkTheme(!appSettings.darkTheme) }
@@ -145,7 +145,7 @@ fun Appearance(
             item {
                 if (appSettings.darkTheme)
                 SettingSwitchItem(
-                    title = "High Contrast",
+                    title = stringResource(R.string.pref_high_contrast),
                     icon = TablerIcons.Outline.Contrast,
                     isChecked = appSettings.highContrast,
                     onClick = { viewModel.setContrastMode(!appSettings.highContrast) }
