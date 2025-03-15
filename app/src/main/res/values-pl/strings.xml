@@ -1,10 +1,13 @@
 <resources>
     <string name="settings">Settings</string>
-    <string name="settings_app">App</string>
-    <string name="home_label">Home</string>
-    <string name="settings_label">Settings</string>
-    <string name="support_us">Support Us</string>
+    <string name="settings_app">Aplikacja</string>
+    <string name="settings_appearance">Zachowanie</string>
+    <string name="settings_appearance_desc">Motyw, kolor i więcej</string>
+    <string name="home_label">Dom</string>
+    <string name="settings_label">Ustawienia</string>
+    <string name="support_us">Wesprzyj Nas</string>
 
+    <string name="detail">Szczegóły:</string>
     <string name="about_view_source_code"><![CDATA[Wejdź na nasz %1$s!<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">O aplikacji</string>
     <string name="true_a">True</string>
@@ -15,6 +18,7 @@
     <string name="sysinfo_device">Urządzenie: %s</string>
     <string name="sysinfo_android_version">Wersja Androida: %s</string>
     <string name="sysinfo_kernel_version">Wersja Kernela: %s</string>
+    <string name="appinfo">Aplikacja</string>
     <string name="appinfo_version">Wersja Aplikacji: %s</string>
     <string name="appinfo_signature">Sygnatura Aplikacji: %s</string>
     <string name="appinfo_is_signature_valid">Sygnatura prawidłowa: %s</string>
@@ -28,6 +32,7 @@
 
     <!-- Preference Strings -->
     <string name="title_general">Ogólne</string>
+    <string name="pref_language">Język</string>
     <string name="pref_telemetry">Wyłącz Telemetrie</string>
     <string name="pref_telemetry_on">Telemetria Sentry jest wyłączona</string>
     <string name="pref_telemetry_off">Spowoduje to wyłączenie telemetri Sentry</string>
@@ -36,16 +41,17 @@
     <string name="pref_experimental_off">Spowoduje to włączenie eksperymentalnych metod wykrywania (wymagany restart)</string>
 
     <!-- Update Strings -->
+    <string name="vi">Wietnamski</string>
+    <string name="zh_cn">Chiński (Uproszczony)</string>
     <string name="failed_to_get_update_info">Nie udało się pobrać informacji o aktualizacji</string>
     <string name="update_available">Aktualizacja dostępna</string>
-    <string name="version_is_available_1">"Wersja  "</string>
-    <string name="version_is_available_2">" jest dostępna. Czy chcesz ją pobrać teraz?"</string>
+    <string name="version_is_available">Wersja %s jest dostępna. Czy chcesz ją pobrać teraz?</string>
     <string name="update_confirm">OK</string>
     <string name="update_cancel">Anuluj</string>
     <string name="update_downloading">Pobieranie aktualizacji</string>
     <string name="update_wait">Proszę czekać…</string>
-    <string name="download_failed">"Pobieranie nieudane: "</string>
-    <string name="error">"Błąd: "</string>
+    <string name="download_failed">Pobieranie nieudane: %s</string>
+    <string name="error">Błąd: %s</string>
     <string name="unable_to_install">Nie ma aplikacji do instalowania APK</string>
 
     <!-- Detection Strings -->
@@ -93,4 +99,19 @@
     <string name="addon_d_or_install_recovery_sh_exists">Addon.d albo install-recovery.sh istnieje</string>
     <string name="detected_root_app">Wykryto aplikację Root</string>
     <string name="detected_mount_inconsistency">Wykryto niespójności w montowaniu partycji</string>
+    <string name="sl">Słowacki</string>
+    <string name="tr_tr">Turecki</string>
+    <string name="id">Indonezyjski</string>
+    <string name="pl">Polski</string>
+    <string name="pt_br">Portugalski (Brazylia)</string>
+    <string name="ru">Rosyjski</string>
+    <string name="pref_dynamic_color">Kolory Dynamiczne</string>
+    <string name="pref_dynamic_color_desc">Zastosuj kolory z tapety do motywu aplikacji</string>
+    <string name="pref_dark_theme">Tryb Ciemny</string>
+    <string name="pref_high_contrast">Wysoki Kontrast</string>
+    <string name="en">Angielski</string>
+    <string name="ar">Arabski</string>
+    <string name="de">Niemiecki</string>
+    <string name="es">Hiszpański</string>
+    <string name="settings_app_desc">Język i więcej</string>
 </resources>

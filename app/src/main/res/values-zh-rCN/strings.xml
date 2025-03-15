@@ -48,8 +48,10 @@
     <string name="en">英语</string>
     <string name="ar">阿拉伯语</string>
     <string name="de">德语</string>
+    <string name="el">希腊语</string>
     <string name="es">西班牙语</string>
     <string name="id">印尼语</string>
+    <string name="ja">日语</string>
     <string name="pl">波兰语</string>
     <string name="pt_br">葡萄牙语（巴西）</string>
     <string name="ru">俄语</string>
@@ -57,6 +59,7 @@
     <string name="tr_tr">土耳其语（土耳其）</string>
     <string name="vi">越南语</string>
     <string name="zh_cn">简体中文</string>
+    <string name="zh_tw">繁体中文</string>
     
     <!-- 更新相关 -->
     <string name="failed_to_get_update_info">获取更新信息失败</string>
@@ -66,8 +69,8 @@
     <string name="update_cancel">取消</string>
     <string name="update_downloading">正在下载更新</string>
     <string name="update_wait">请稍候……</string>
-    <string name="download_failed">下载失败：</string>
-    <string name="error">错误：</string>
+    <string name="download_failed">下载失败：%s</string>
+    <string name="error">错误：%s</string>
     <string name="unable_to_install">没有能够安装 APK 的应用程序</string>
 
     <!-- 检测相关 -->
@@ -78,7 +81,7 @@
     <string name="detected_zygisk_assistant">检测到 Zygisk-Assistant</string>
     <string name="bootloader_unlocked">Bootloader 已解锁</string>
     <string name="oem_unlocking_enabled">OEM 解锁已启用</string>
-    <string name="detected_zygisk_official_magisk">检测到 Zygisk（Magisk 官方）</string>
+    <string name="detected_zygisk_official_magisk">检测到 Zygisk（来自 Magisk）</string>
     <string name="detected_zygisk_next">检测到 Zygisk Next（%s）</string>
     <string name="debug_fingerprint_detected">检测到调试指纹（%s）</string>
     <string name="found_magisk_recovery_file">发现 Magisk／Recovery 文件</string>
@@ -98,7 +101,7 @@
     <string name="detected_abnormal_boot_state">检测到 Boot 状态异常</string>
     <string name="detected_leaked_keybox">检测到泄露的 Keybox</string>
     <string name="detected_mount_abnormality">检测到挂载异常</string>
-    <string name="detected_root_solution">检测到 Root 应用</string>
+    <string name="detected_root_solution">检测到 Root 方案</string>
     <string name="detected_hide_my_applist">检测到隐藏应用列表</string>
     <string name="detected_ksu_ap_modules_img">检测到 KernelSU／APatch 的模块镜像</string>
     <string name="detected_custom_rom">检测到非原厂 ROM（%s）</string>
@@ -112,7 +115,7 @@
     <string name="detected_risky_app">检测到风险应用</string>
     <string name="hide_my_applist_is_likely_used">疑似使用了隐藏应用列表</string>
     <string name="addon_d_or_install_recovery_sh_exists">存在 Addon.d 或 install-recovery.sh</string>
-    <string name="detected_root_app">检测到 Root 管理器</string>
+    <string name="detected_root_app">检测到 Root 应用</string>
     <string name="detected_mount_inconsistency">检测到挂载不一致</string>
     <string name="umount_detected">检测到 Umount</string>
 </resources>
