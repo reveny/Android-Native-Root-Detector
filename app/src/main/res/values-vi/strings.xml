@@ -1,39 +1,69 @@
 <resources>
+    <string name="app_name" translatable="false">Native Detector</string>
     <string name="settings">Cài đặt</string>
     <string name="settings_app">Ứng dụng</string>
+    <string name="settings_app_desc">Ngôn ngữ và nhiều thứ khác</string>
+    <string name="settings_appearance">Giao diện</string>
+    <string name="settings_appearance_desc">Theme, màu sắc và nhiều thứ khác</string>
     <string name="home_label">Màn hình chính</string>
     <string name="settings_label">Cài đặt</string>
-    <string name="support_us">Giúp đỡ chúng tôi</string>
-
-    <string name="about_view_source_code"><![CDATA[Tham gia %1$s Kênh<br/><br>được bảo lãnh bởi © %2$s<br/>]]></string>
+    <string name="support_us">Hỗ trợ chúng tôi</string>
+    <string name="detail">Chi tiết:</string>
+    <string name="about_view_source_code"><![CDATA[Tham gia %1$s kênh <br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">Thông tin</string>
-    <string name="true_a">Đúng</string>
-    <string name="false_a">Sai</string>
-    <string name="true_b">Đúng</string>
-    <string name="false_b">Sai</string>
-    <string name="sysinfo">Thông tin hệ thống</string>
+    <!-- _a & _b are set for certain languages -->
+    <string name="true_a">True</string>
+    <string name="false_a">False</string>
+    <!-- _a is for experimental detection status -->
+    <string name="true_b">True</string>
+    <string name="false_b">False</string>
+    <!-- _b is for signature valid status -->
+    <string name="sysinfo">Hệ thống</string>
     <string name="sysinfo_device">Thiết bị: %s</string>
     <string name="sysinfo_android_version">Phiên bản android: %s</string>
     <string name="sysinfo_kernel_version">Phiên bản kernel: %s</string>
+    <string name="appinfo">App</string>
     <string name="appinfo_version">Phiên bản ứng dụng: %s</string>
     <string name="appinfo_signature">Chữ kí ứng dụng: %s</string>
     <string name="appinfo_is_signature_valid">Chữ kí hợp lệ: %s</string>
-    <string name="appinfo_unknown_version">Không rõ</string>
-    <string name="experimental_detections">Thử nghiệm: %s</string>
-    <string name="DayNight">Chế độ ban đêm</string>
-    <string name="the_environment_is_normal">Thiết bị an toàn</string>
-    <string name="the_environment_is_abnormal">Thiết bị không an toàn</string>
-    <string name="description_normal">Không phát hiện tập tin/tệp/chữ kí đáng ngờ nào</string>
-    <string name="description_abnormal">Phát hiện tập tin/tệp/chữ kí đáng ngờ</string>
+    <string name="appinfo_unknown_version">UNKNOWN</string>
+    <string name="experimental_detections">Phát hiện thử nghiệm: %s</string>
+    <string name="DayNight">Chế độ tối</string>
+    <string name="the_environment_is_normal">Hệ thống nguyên bản</string>
+    <string name="the_environment_is_abnormal">Hệ thống đã bị can thiệp</string>
+    <string name="description_normal">Không phát hiện sự can thiệp trong hệ thống.</string>
+    <string name="description_abnormal">Đã phát hiện sự can thiệp trong hệ thống.</string>
 
     <!-- Preference Strings -->
-    <string name="title_general">Cài dặt chung</string>
+    <string name="title_general">Chung</string>
+    <string name="pref_language">Ngôn ngữ</string>
     <string name="pref_telemetry">Vô hiệu hóa tính năng sử dụng mạng</string>
-    <string name="pref_telemetry_on">Tính năng sử dụng mạng đã dược vô hiệu hóa</string>
-    <string name="pref_telemetry_off">Sẽ vô hiệu hóa tính năng cần mạng</string>
-    <string name="pref_experimental">Kích họat tính năng phát hiện tập tin/tệp/chữ kí thử nghiệm (có sai số)</string>
-    <string name="pref_experimental_on">Tính năng phát hiện tập tin/tệp/chữ kí thử nghiệm đang dược bật</string>
-    <string name="pref_experimental_off">Sẽ kích hoạt tính năng phát hiện tập tin/tệp/chữ kí thử nghiệm (yêu cầu khởi động lại)</string>
+    <string name="pref_telemetry_on">Hệ thống theo dõi hiệu suất đã bị vô hiệu hóa</string>
+    <string name="pref_telemetry_off">Hệ thống theo dõi hiệu suất sẽ bị hô hiệu hóa</string>
+    <string name="pref_experimental">Phát hiện trình phát hiện thử nghiệm</string>
+    <string name="pref_experimental_on">Thử nghiệm đã được kích hoạt</string>
+    <string name="pref_experimental_off">Sẽ kích hoạt trình phát hiện thử nghiệm(yêu cầu khởi động lại)</string>
+    <string name="pref_dynamic_color">Monent color (A12+)</string>
+    <string name="pref_dynamic_color_desc">Lấy 3 tông màu từ hình nền làm theme</string>
+    <string name="pref_dark_theme">Chế độ tối</string>
+    <string name="pref_high_contrast">Chế độ tương phản cao</string>
+
+    <!-- Language Strings -->
+    <string name="en">English</string>
+    <string name="ar">Arabic</string>
+    <string name="de">German</string>
+    <string name="el">Greek</string>
+    <string name="es">Spanish</string>
+    <string name="id">Indonesian</string>
+    <string name="ja">Japanese</string>
+    <string name="pl">Polish</string>
+    <string name="pt_br">Portuguese (Brazil)</string>
+    <string name="ru">Russian</string>
+    <string name="sl">Slovenian</string>
+    <string name="tr_tr">Turkish (Turkey)</string>
+    <string name="vi">Vietnamese</string>
+    <string name="zh_cn">Chinese (Simplified)</string>
+    <string name="zh_tw">Chinese (Traditional)</string>
 
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Không thể gửi/nhận thông tin cập nhật</string>
