@@ -1,0 +1,124 @@
+<resources>
+    <string name="settings">Ayarlar</string>
+    <string name="settings_app">Uygulama</string>
+    <string name="settings_app_desc">Dil ve daha fazlası</string>
+    <string name="settings_appearance">Görünüm</string>
+    <string name="settings_appearance_desc">Tema, renk ve daha fazlası</string>
+    <string name="home_label">Anasayfa</string>
+    <string name="settings_label">Ayarlar</string>
+    <string name="support_us">Bizi Destekleyin</string>
+    <string name="detail">Detaylar:</string>
+    <string name="about_view_source_code"><![CDATA[%1$s kanalımıza katılın<br/><br>Telif Hakkı © %2$s<br/>]]></string>
+    <string name="About">Hakkında</string>
+    <!-- _a & _b bazı diller için ayarlanmıştır -->
+    <string name="true_a">Doğru</string>
+    <string name="false_a">Yanlış</string>
+    <!-- _a deneysel algılama durumu içindir -->
+    <string name="true_b">Doğru</string>
+    <string name="false_b">Yanlış</string>
+    <!-- _b imza geçerlilik durumu içindir -->
+    <string name="sysinfo">Sistem</string>
+    <string name="sysinfo_device">Cihaz: %s</string>
+    <string name="sysinfo_android_version">Android Sürümü: %s</string>
+    <string name="sysinfo_kernel_version">Çekirdek Sürümü: %s</string>
+    <string name="appinfo">Uygulama</string>
+    <string name="appinfo_version">Uygulama Sürümü: %s</string>
+    <string name="appinfo_signature">Uygulama İmzası: %s</string>
+    <string name="appinfo_is_signature_valid">İmza Geçerli: %s</string>
+    <string name="appinfo_unknown_version">BİLİNMİYOR</string>
+    <string name="experimental_detections">Deneysel Algılamalar: %s</string>
+    <string name="DayNight">Karanlık Mod</string>
+    <string name="the_environment_is_normal">Ortam Normal</string>
+    <string name="the_environment_is_abnormal">Ortam Anormal</string>
+    <string name="description_normal">Ortama yapılan hiçbir değişiklik algılanmadı.</string>
+    <string name="description_abnormal">Ortama yapılan değişiklikler algılandı.</string>
+
+    <!-- Tercih Dizeleri -->
+    <string name="title_general">Genel</string>
+    <string name="pref_language">Dil</string>
+    <string name="pref_telemetry">Telemetriyi Devre Dışı Bırak</string>
+    <string name="pref_telemetry_on">Sentry telemetrisi devre dışı</string>
+    <string name="pref_telemetry_off">Bu, Sentry telemetrisini devre dışı bırakacak</string>
+    <string name="pref_experimental">Deneysel Algılamaları Etkinleştir</string>
+    <string name="pref_experimental_on">Deneysel algılamalar etkin</string>
+    <string name="pref_experimental_off">Bu, deneysel algılamaları etkinleştirecek (yeniden başlatma gerekli)</string>
+    <string name="pref_dynamic_color">Dinamik Renk</string>
+    <string name="pref_dynamic_color_desc">Duvar kağıtlarından renkleri uygulama temasına uygula</string>
+    <string name="pref_dark_theme">Koyu Tema</string>
+    <string name="pref_high_contrast">Yüksek Kontrast</string>
+
+    <!-- Dil Dizeleri -->
+    <string name="en">İngilizce</string>
+    <string name="ar">Arapça</string>
+    <string name="de">Almanca</string>
+    <string name="el">Yunanca</string>
+    <string name="es">İspanyolca</string>
+    <string name="id">Endonezyaca</string>
+    <string name="ja">Japonca</string>
+    <string name="pl">Lehçe</string>
+    <string name="pt_br">Portekizce (Brezilya)</string>
+    <string name="ru">Rusça</string>
+    <string name="sl">Slovence</string>
+    <string name="tr_tr">Türkçe (Türkiye)</string>
+    <string name="vi">Vietnamca</string>
+    <string name="zh_cn">Çince (Basitleştirilmiş)</string>
+    <string name="zh_tw">Çince (Geleneksel)</string>
+
+    <!-- Güncelleme Dizeleri -->
+    <string name="failed_to_get_update_info">Güncelleme bilgisi alınamadı</string>
+    <string name="update_available">Güncelleme Mevcut</string>
+    <string name="version_is_available">%s sürümü mevcut. Şimdi indirmek ister misiniz?</string>
+    <string name="update_confirm">TAMAM</string>
+    <string name="update_cancel">İptal</string>
+    <string name="update_downloading">Güncelleme İndiriliyor</string>
+    <string name="update_wait">Lütfen bekleyin…</string>
+    <string name="download_failed">İndirme başarısız: %s</string>
+    <string name="error">Hata: %s</string>
+    <string name="unable_to_install">APK\'yı yüklemek için uygulama mevcut değil</string>
+
+    <!-- Algılama Dizeleri -->
+    <string name="modified_environment_detected">Değiştirilmiş Ortam Algılandı</string>
+    <string name="suspicious_mount_detected">Şüpheli Bağlama Algılandı</string>
+    <string name="detected_kernelsu_magisk">KernelSU/Magisk Algılandı</string>
+    <string name="detected_magisk">Magisk Algılandı</string>
+    <string name="detected_zygisk_assistant">Zygisk-Assistant Algılandı</string>
+    <string name="bootloader_unlocked">Bootloader Kilidi Açıldı</string>
+    <string name="oem_unlocking_enabled">OEM Kilidi Açma Etkin</string>
+    <string name="detected_zygisk_official_magisk">Zygisk (Resmi Magisk) Algılandı</string>
+    <string name="detected_zygisk_next">Zygisk Next (%s) Algılandı</string>
+    <string name="debug_fingerprint_detected">Hata Ayıklama Parmak İzi Algılandı (%s)</string>
+    <string name="found_magisk_recovery_file">Magisk/Recovery Dosyası Bulundu</string>
+    <string name="found_su_binary">SU İkili Dosyası Bulundu</string>
+    <string name="detected_zygisk">Zygisk Algılandı</string>
+    <string name="detected_magisk_module">Magisk Modülü Algılandı</string>
+    <string name="found_injection">Enjeksiyon Bulundu</string>
+    <string name="detected_lsposed">LSPosed (%s) Algılandı</string>
+    <string name="no_system_apps_found">Sistem uygulamaları bulunamadı</string>
+    <string name="detected_lineageos">LineageOS (%s) Algılandı</string>
+    <string name="no_info_given">Bilgi verilmedi</string>
+    <string name="detected_modified_hosts_file">Değiştirilmiş Hosts Dosyası Algılandı</string>
+    <string name="detected_resetprop">Resetprop Algılandı</string>
+    <string name="tee_is_broken">TEE Bozuk</string>
+    <string name="keybox_revoked_by_google">Google tarafından Keybox %s iptal edildi</string>
+    <string name="key_attestation_failed">Anahtar Doğrulama Başarısız</string>
+    <string name="detected_abnormal_boot_state">Anormal Önyükleme Durumu Algılandı</string>
+    <string name="detected_leaked_keybox">Sızan Keybox Algılandı</string>
+    <string name="detected_mount_abnormality">Bağlama Anormalliği Algılandı</string>
+    <string name="detected_root_solution">Root Çözümü Algılandı</string>
+    <string name="detected_hide_my_applist">Hide My Applist Algılandı</string>
+    <string name="detected_ksu_ap_modules_img">KSU/AP modules.img Algılandı</string>
+    <string name="detected_custom_rom">Özel ROM (%s) Algılandı</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil lineage içeriyor</string>
+    <string name="detected_gapps">GApps Algılandı</string>
+    <string name="detected_custom_kernel">Özel Çekirdek Algılandı</string>
+    <string name="detected_framework_patch">Çerçeve Yaması Algılandı</string>
+    <string name="detected_overlayfs">OverlayFS Algılandı</string>
+    <string name="detected_overlay_mounted">Overlay bağlı</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay bağlı ancak bağlama gizli olabilir</string>
+    <string name="detected_risky_app">Riskli Uygulama Algılandı</string>
+    <string name="hide_my_applist_is_likely_used">Hide My Applist muhtemelen kullanılıyor</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Addon.d veya install-recovery.sh var</string>
+    <string name="detected_root_app">Root Uygulaması Algılandı</string>
+    <string name="detected_mount_inconsistency">Bağlama Uyumsuzluğu Algılandı</string>
+    <string name="umount_detected">Umount Algılandı</string>
+</resources>
