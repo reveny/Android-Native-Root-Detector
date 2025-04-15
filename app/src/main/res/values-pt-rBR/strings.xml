@@ -1,96 +1,125 @@
 <resources>
-    <string name="settings">Settings</string>
+    <string name="app_name" translatable="false">Native Detector</string>
+    <string name="settings">Configurações</string>
     <string name="settings_app">App</string>
+    <string name="settings_app_desc">Idioma, e mais</string>
+    <string name="settings_appearance">Aparência</string>
+    <string name="settings_appearance_desc">Tema, cor, e mais</string>
     <string name="home_label">Home</string>
-    <string name="settings_label">Settings</string>
-    <string name="support_us">Support Us</string>
-
-    <string name="about_view_source_code"><![CDATA[Entre no nosso canal %1$s<br/><br>Copyright © %2$s<br/>]]></string>
+    <string name="settings_label">Configurações</string>
+    <string name="support_us">Apoie-nos</string>
+    <string name="detail">Detalhes:</string>
+    <string name="about_view_source_code"><![CDATA[Junte-se ao nosso %1$s canal<br/><br>Copyright © %2$s<br/>]]></string>
     <string name="About">Sobre</string>
-    <string name="true_a">Verdadeiro</string>
-    <string name="false_a">Falso</string>
-    <string name="true_b">Verdadeiro</string>
-    <string name="false_b">Falso</string>
-    <string name="sysinfo">Informações do Sistema</string>
+    <!-- _a & _b are set for certain languages -->
+    <string name="true_a">True</string>
+    <string name="false_a">False</string>
+    <!-- _a is for experimental detection status -->
+    <string name="true_b">True</string>
+    <string name="false_b">False</string>
+    <!-- _b is for signature valid status -->
+    <string name="sysinfo">Sistema</string>
     <string name="sysinfo_device">Dispositivo: %s</string>
     <string name="sysinfo_android_version">Versão do Android: %s</string>
     <string name="sysinfo_kernel_version">Versão do Kernel: %s</string>
+    <string name="appinfo">App</string>
     <string name="appinfo_version">Versão do App: %s</string>
     <string name="appinfo_signature">Assinatura do App: %s</string>
     <string name="appinfo_is_signature_valid">Assinatura Válida: %s</string>
     <string name="appinfo_unknown_version">DESCONHECIDO</string>
-    <string name="experimental_detections">Detecções Experimentais: %s</string>
+    <string name="experimental_detections">Detecções experimentais: %s</string>
     <string name="DayNight">Modo Escuro</string>
-    <string name="the_environment_is_normal">O ambiente é normal</string>
-    <string name="the_environment_is_abnormal">O ambiente é anormal</string>
+    <string name="the_environment_is_normal">O Ambiente está normal</string>
+    <string name="the_environment_is_abnormal">O Ambiente está anormal</string>
     <string name="description_normal">Nenhuma modificação no ambiente foi detectada.</string>
     <string name="description_abnormal">Modificações no ambiente foram detectadas.</string>
 
-    <!-- Strings de Preferências -->
+    <!-- Preference Strings -->
     <string name="title_general">Geral</string>
-    <string name="pref_telemetry">Desativar Telemetria</string>
-    <string name="pref_telemetry_on">A telemetria Sentry está desativada</string>
-    <string name="pref_telemetry_off">Isto desativará a telemetria Sentry</string>
-    <string name="pref_experimental">Ativar Detecções Experimentais</string>
-    <string name="pref_experimental_on">Detecções experimentais estão ativadas</string>
-    <string name="pref_experimental_off">Isto ativará detecções experimentais (é necessário reiniciar)</string>
+    <string name="pref_language">Idioma</string>
+    <string name="pref_telemetry">Desabilitar Telemetria</string>
+    <string name="pref_telemetry_on">Telemetria Sentry está desabilitada</string>
+    <string name="pref_telemetry_off">Isso iŕa desabilitar a Telemetria Sentry</string>
+    <string name="pref_experimental">Habilitar Detecções Experimentais</string>
+    <string name="pref_experimental_on">Detecções Experimentais está habilitado</string>
+    <string name="pref_experimental_off">Isso irá habilitar as detecções experimentais (necessário reiniciar)</string>
+    <string name="pref_dynamic_color">Cores Dinâmicas</string>
+    <string name="pref_dynamic_color_desc">Aplicar cores do wallpaper para o tema do app</string>
+    <string name="pref_dark_theme">Tema Escuro</string>
+    <string name="pref_high_contrast">Contraste Alto</string>
 
-    <!-- Strings de Atualização -->
+    <!-- Language Strings -->
+    <string name="en">Inglês</string>
+    <string name="ar">Árabe</string>
+    <string name="de">Alemão</string>
+    <string name="el">Grego</string>
+    <string name="es">Espanhol</string>
+    <string name="id">Indonésio</string>
+    <string name="ja">Japonês</string>
+    <string name="pl">Polonês</string>
+    <string name="pt_br">Português (Brasil)</string>
+    <string name="ru">Russo</string>
+    <string name="sl">Esloveno</string>
+    <string name="tr_tr">Turco (Peru)</string>
+    <string name="vi">Vietnamita</string>
+    <string name="zh_cn">Chinês (Simplificado)</string>
+    <string name="zh_tw">Chinês (Tradicional)</string>
+
+    <!-- Update Strings -->
     <string name="failed_to_get_update_info">Falha ao buscar informações de atualização</string>
-    <string name="update_available">Atualização Disponível</string>
-    <string name="version_is_available_1">Versão </string>
-    <string name="version_is_available_2"> está disponível. Deseja baixá-la agora?</string>
-    <string name="update_confirm">OK</string>
+    <string name="update_available">Atualização disponível</string>
+    <string name="version_is_available">Versão %s está disponível. Você quer baixá-lo agora?</string>
+    <string name="update_confirm">Ok</string>
     <string name="update_cancel">Cancelar</string>
-    <string name="update_downloading">Baixando Atualização</string>
+    <string name="update_downloading">Baixando atualização</string>
     <string name="update_wait">Por favor, aguarde…</string>
-    <string name="download_failed">Falha no download: </string>
-    <string name="error">Erro: </string>
-    <string name="unable_to_install">Nenhum aplicativo disponível para instalar o APK</string>
+    <string name="download_failed">Download falhou: %s</string>
+    <string name="error">Erro: %s</string>
+    <string name="unable_to_install">Nenhum app disponível para instalar APK</string>
 
-    <!-- Strings de Detecção -->
-    <string name="modified_environment_detected">Ambiente Modificado Detectado</string>
-    <string name="suspicious_mount_detected">Montagem Suspeita Detectada</string>
+    <!-- Detection Strings -->
+    <string name="modified_environment_detected">Ambiente modificado Detectado</string>
+    <string name="suspicious_mount_detected">Monte Suspeita Detectada</string>
     <string name="detected_kernelsu_magisk">KernelSU/Magisk Detectado</string>
     <string name="detected_magisk">Magisk Detectado</string>
     <string name="detected_zygisk_assistant">Zygisk-Assistant Detectado</string>
     <string name="bootloader_unlocked">Bootloader Desbloqueado</string>
-    <string name="oem_unlocking_enabled">Desbloqueio OEM Ativado</string>
-    <string name="detected_zygisk_official_magisk">Zygisk Detectado (Magisk Oficial)</string>
+    <string name="oem_unlocking_enabled">Desbloqueio OEM Detectado</string>
+    <string name="detected_zygisk_official_magisk">Zygisk (Magisk Oficial) Detectado</string>
     <string name="detected_zygisk_next">Zygisk Next Detectado (%s)</string>
-    <string name="debug_fingerprint_detected">Impressão Digital de Debug Detectada (%s)</string>
-    <string name="found_magisk_recovery_file">Arquivo de Magisk/Recovery Encontrado</string>
+    <string name="debug_fingerprint_detected">Depuração de digital Detectada (%s)</string>
+    <string name="found_magisk_recovery_file">Arquivo Magisk/Recovery Encontrado</string>
     <string name="found_su_binary">Binário SU Encontrado</string>
     <string name="detected_zygisk">Zygisk Detectado</string>
     <string name="detected_magisk_module">Módulo Magisk Detectado</string>
     <string name="found_injection">Injeção Encontrada</string>
     <string name="detected_lsposed">LSPosed Detectado (%s)</string>
-    <string name="no_system_apps_found">Nenhum aplicativo do sistema encontrado</string>
+    <string name="no_system_apps_found">Nenhum app do sistema encontrado</string>
     <string name="detected_lineageos">LineageOS Detectado (%s)</string>
     <string name="no_info_given">Nenhuma informação fornecida</string>
-    <string name="detected_modified_hosts_file">Arquivo Hosts Modificado Detectado</string>
+    <string name="detected_modified_hosts_file">Arquivo de Hosts Modificado</string>
     <string name="detected_resetprop">Resetprop Detectado</string>
     <string name="tee_is_broken">TEE está quebrado</string>
-    <string name="keybox_revoked_by_google">Keybox %s foi revogada pelo Google</string>
-    <string name="key_attestation_failed">Falha na atestação de chave</string>
-    <string name="detected_abnormal_boot_state">Estado de Inicialização Anormal Detectado</string>
-    <string name="detected_leaked_keybox">Keybox Vazado Detectado</string>
-    <string name="detected_mount_abnormality">Anormalidade de Montagem Detectada</string>
+    <string name="keybox_revoked_by_google">Keybox %s foi revogada pela Google</string>
+    <string name="key_attestation_failed">Key Attestation falhou</string>
+    <string name="detected_abnormal_boot_state">Estado de Boot Anormal Detectado</string>
+    <string name="detected_leaked_keybox">Keybox Vazada</string>
+    <string name="detected_mount_abnormality">Anormalidade na montagem Detectada</string>
     <string name="detected_root_solution">Solução de Root Detectada</string>
     <string name="detected_hide_my_applist">Hide My Applist Detectado</string>
-    <string name="detected_ksu_ap_modules_img">Módulos.img de KSU/AP Detectados</string>
-    <string name="detected_custom_rom">Custom ROM Detectada (%s)</string>
+    <string name="detected_ksu_ap_modules_img">KSU/AP modules.img Detectado</string>
+    <string name="detected_custom_rom"> Custom ROM Detectada (%s)</string>
     <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil contém lineage</string>
-    <string name="detected_gapps">GApps Detectado</string>
+    <string name="detected_gapps">GApps Detectados</string>
     <string name="detected_custom_kernel">Kernel Customizado Detectado</string>
-    <string name="detected_framework_patch">Patch de Framework Detectado</string>
+    <string name="detected_framework_patch">Framework Patch Detectado</string>
     <string name="detected_overlayfs">OverlayFS Detectado</string>
-    <string name="detected_overlay_mounted">Overlay Montado Detectado</string>
-    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay montado, mas a montagem pode estar oculta</string>
-    <string name="detected_risky_app">Aplicativo de Risco Detectado</string>
-    <string name="hide_my_applist_is_likely_used">Provavelmente, Hide My Applist está sendo usado</string>
-    <string name="addon_d_or_install_recovery_sh_exists">Addon.d ou install-recovery.sh existem</string>
-    <string name="detected_root_app">Aplicativo de Root Detectado</string>
+    <string name="detected_overlay_mounted">overlay montado detectado</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay Montado, mas a montagem pode estar escondido</string>
+    <string name="detected_risky_app">Risky App Detectado</string>
+    <string name="hide_my_applist_is_likely_used">Hide My Applist provavelmente é usado</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Addon.d ou install-recovery.sh existe</string>
+    <string name="detected_root_app">Root App Detectado</string>
     <string name="detected_mount_inconsistency">Inconsistência de Montagem Detectada</string>
     <string name="umount_detected">Umount Detectado</string>
 </resources>
