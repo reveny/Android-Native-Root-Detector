@@ -64,7 +64,7 @@
     <string name="vi">Vietnamese</string>
     <string name="zh_cn">Chinese (Simplified)</string>
     <string name="zh_tw">Chinese (Traditional)</string>
-    <string name="de">Bulgarian</string>
+    <string name="bg">Bulgarian</string>
 
     <!-- Update Strings -->
     <string name="failed_to_get_update_info">Failed to fetch update information</string>
