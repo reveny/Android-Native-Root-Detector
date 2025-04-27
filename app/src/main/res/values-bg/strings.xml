@@ -1,0 +1,125 @@
+<resources>
+    <string name="settings">Настройки</string>
+    <string name="settings_app">Приложение</string>
+    <string name="settings_app_desc">Език и други</string>
+    <string name="settings_appearance">Външен вид</string>
+    <string name="settings_appearance_desc">Тема, цвят и други</string>
+    <string name="home_label">Начало</string>
+    <string name="settings_label">Настройки</string>
+    <string name="support_us">Подкрепете ни</string>
+    <string name="detail">Подробности:</string>
+    <string name="about_view_source_code"><![CDATA[Присъединете се към нашия %1$s канал<br/><br>Copyright © %2$s<br/>]]></string>
+    <string name="About">За приложението</string>
+    <!-- _a & _b are set for certain languages -->
+    <string name="true_a">Вярно</string>
+    <string name="false_a">Грешно</string>
+    <!-- _a is for experimental detection status -->
+    <string name="true_b">Вярно</string>
+    <string name="false_b">Грешно</string>
+    <!-- _b is for signature valid status -->
+    <string name="sysinfo">Система</string>
+    <string name="sysinfo_device">Устройство: %s</string>
+    <string name="sysinfo_android_version">Версия на Android: %s</string>
+    <string name="sysinfo_kernel_version">Версия на ядрото: %s</string>
+    <string name="appinfo">Приложение</string>
+    <string name="appinfo_version">Версия на приложението: %s</string>
+    <string name="appinfo_signature">Подпис на приложението: %s</string>
+    <string name="appinfo_is_signature_valid">Валиден подпис: %s</string>
+    <string name="appinfo_unknown_version">НЕИЗВЕСТНА</string>
+    <string name="experimental_detections">Експериментални детекции: %s</string>
+    <string name="DayNight">Тъмен режим</string>
+    <string name="the_environment_is_normal">Средата е нормална</string>
+    <string name="the_environment_is_abnormal">Средата е анормална</string>
+    <string name="description_normal">Не са открити модификации в средата.</string>
+    <string name="description_abnormal">Открити са модификации в средата.</string>
+
+    <!-- Preference Strings -->
+    <string name="title_general">Общи</string>
+    <string name="pref_language">Език</string>
+    <string name="pref_telemetry">Изключи телеметрията</string>
+    <string name="pref_telemetry_on">Телеметрията на Sentry е изключена</string>
+    <string name="pref_telemetry_off">Това ще изключи телеметрията на Sentry</string>
+    <string name="pref_experimental">Активирай експериментални детекции</string>
+    <string name="pref_experimental_on">Експерименталните детекции са активирани</string>
+    <string name="pref_experimental_off">Това ще активира експериментални детекции (изисква се рестарт)</string>
+    <string name="pref_dynamic_color">Динамичен цвят</string>
+    <string name="pref_dynamic_color_desc">Прилага цветове от тапетите към темата на приложението</string>
+    <string name="pref_dark_theme">Тъмна тема</string>
+    <string name="pref_high_contrast">Висок контраст</string>
+
+    <!-- Language Strings -->
+    <string name="en">Английски</string>
+    <string name="ar">Арабски</string>
+    <string name="de">Немски</string>
+    <string name="el">Гръцки</string>
+    <string name="es">Испански</string>
+    <string name="id">Индонезийски</string>
+    <string name="ja">Японски</string>
+    <string name="pl">Полски</string>
+    <string name="pt_br">Португалски (Бразилия)</string>
+    <string name="ru">Руски</string>
+    <string name="sl">Словенски</string>
+    <string name="tr_tr">Турски (Турция)</string>
+    <string name="vi">Виетнамски</string>
+    <string name="zh_cn">Китайски (Опростен)</string>
+    <string name="zh_tw">Китайски (Традиционен)</string>
+    <string name="bg">Български</string>
+
+    <!-- Update Strings -->
+    <string name="failed_to_get_update_info">Неуспешно взимане на информация за актуализация</string>
+    <string name="update_available">Налична е актуализация</string>
+    <string name="version_is_available">Версия %s е налична. Искате ли да я изтеглите сега?</string>
+    <string name="update_confirm">OK</string>
+    <string name="update_cancel">Отказ</string>
+    <string name="update_downloading">Изтегляне на актуализация</string>
+    <string name="update_wait">Моля, изчакайте…</string>
+    <string name="download_failed">Грешка при изтегляне: %s</string>
+    <string name="error">Грешка: %s</string>
+    <string name="unable_to_install">Няма приложение за инсталиране на APK</string>
+
+    <!-- Detection Strings -->
+    <string name="modified_environment_detected">Открита е модифицирана среда</string>
+    <string name="suspicious_mount_detected">Открита е подозрителна точка на монтиране</string>
+    <string name="detected_kernelsu_magisk">Открит е KernelSU/Magisk</string>
+    <string name="detected_magisk">Открит е Magisk</string>
+    <string name="detected_zygisk_assistant">Открит е Zygisk-Assistant</string>
+    <string name="bootloader_unlocked">Bootloader е отключен</string>
+    <string name="oem_unlocking_enabled">OEM отключването е активирано</string>
+    <string name="detected_zygisk_official_magisk">Открит е Zygisk (официален Magisk)</string>
+    <string name="detected_zygisk_next">Открит е Zygisk Next (%s)</string>
+    <string name="debug_fingerprint_detected">Открит е debug fingerprint (%s)</string>
+    <string name="found_magisk_recovery_file">Открит е Magisk/Recovery файл</string>
+    <string name="found_su_binary">Открит е SU бинарен файл</string>
+    <string name="detected_zygisk">Открит е Zygisk</string>
+    <string name="detected_magisk_module">Открит е Magisk модул</string>
+    <string name="found_injection">Открита е инжекция</string>
+    <string name="detected_lsposed">Открит е LSPosed (%s)</string>
+    <string name="no_system_apps_found">Не са открити системни приложения</string>
+    <string name="detected_lineageos">Открит е LineageOS (%s)</string>
+    <string name="no_info_given">Няма предоставена информация</string>
+    <string name="detected_modified_hosts_file">Открит е модифициран hosts файл</string>
+    <string name="detected_resetprop">Открит е Resetprop</string>
+    <string name="tee_is_broken">TEE е повреден</string>
+    <string name="keybox_revoked_by_google">Keybox %s е оттеглен от Google</string>
+    <string name="key_attestation_failed">Неуспешна проверка на ключ</string>
+    <string name="detected_abnormal_boot_state">Открит е анормален boot статус</string>
+    <string name="detected_leaked_keybox">Открит е изтекъл keybox</string>
+    <string name="detected_mount_abnormality">Открита е анормалност при монтиране</string>
+    <string name="detected_root_solution">Открит е root метод</string>
+    <string name="detected_hide_my_applist">Открит е Hide My Applist</string>
+    <string name="detected_ksu_ap_modules_img">Открит е KSU/AP modules.img</string>
+    <string name="detected_custom_rom">Открит е персонализиран ROM (%s)</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil съдържа lineage</string>
+    <string name="detected_gapps">Открит е GApps</string>
+    <string name="detected_custom_kernel">Открит е персонализирано ядро</string>
+    <string name="detected_framework_patch">Открит е framework patch</string>
+    <string name="detected_overlayfs">Открит е OverlayFS</string>
+    <string name="detected_overlay_mounted">Открит е overlay монтиран</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay е монтиран, но монтирането може да е скрито</string>
+    <string name="detected_risky_app">Открито е рисковано приложение</string>
+    <string name="hide_my_applist_is_likely_used">Вероятно се използва Hide My Applist</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Съществува addon.d или install-recovery.sh</string>
+    <string name="detected_root_app">Открито е root приложение</string>
+    <string name="detected_mount_inconsistency">Открита е несъответствие при монтиране</string>
+    <string name="umount_detected">Открит е umount</string>
+</resources>
