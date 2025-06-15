@@ -1,5 +1,6 @@
 package com.reveny.nativecheck.viewmodel
 
+import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
 import android.content.pm.PackageManager
@@ -120,13 +121,24 @@ class MainViewModel() : ViewModel() {
         }
         return kernelVersion.toString().split("-")[0]
     }
-
+    @Suppress("DEPRECATION")
+    @SuppressLint("PackageManagerGetSignatures")
     private fun getSignature(context: Context): String {
         return try {
             val pm = context.packageManager
-            val packageInfo = pm.getPackageInfo(context.packageName, PackageManager.GET_SIGNATURES)
+            pm.getPackageInfo(context.packageName, PackageManager.GET_SIGNATURES)
             val digest = MessageDigest.getInstance("SHA-256")
-            for (signature in packageInfo.signatures!!) {
+            val signatures = with(pm) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    getPackageInfo(context.packageName, PackageManager.GET_SIGNING_CERTIFICATES)
+                        .signingInfo
+                        ?.apkContentsSigners
+                } else {
+                    getPackageInfo(context.packageName, PackageManager.GET_SIGNATURES)
+                        .signatures
+                }
+            }
+            for (signature in signatures!!) {
                 val signatureBytes = signature.toByteArray()
                 digest.update(signatureBytes)
             }
