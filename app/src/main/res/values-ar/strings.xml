@@ -1,9 +1,9 @@
 <resources>
-    <string name="settings">Settings</string>
-    <string name="settings_app">App</string>
-    <string name="home_label">Home</string>
-    <string name="settings_label">Settings</string>
-    <string name="support_us">Support Us</string>
+    <string name="settings">الإعدادات</string>
+    <string name="settings_app">التطبيق</string>
+    <string name="home_label">الرئيسية</string>
+    <string name="settings_label">الخيارات</string>
+    <string name="support_us">ادعمنا</string>
 
     <string name="about_view_source_code"><![CDATA[انضم إلى قناتنا %1$s<br/><br>حقوق النشر © %2$s<br/>]]></string>
     <string name="About">حول</string>
@@ -55,12 +55,12 @@
     <string name="detected_magisk">تم اكتشاف Magisk</string>
     <string name="detected_zygisk_assistant">تم اكتشاف Zygisk-Assistant</string>
     <string name="bootloader_unlocked">تم فتح البوتلودر</string>
-    <string name="oem_unlocking_enabled">تم تمكين وضع المصنع</string>
+    <string name="oem_unlocking_enabled">تم تمكين خيار فتح البوتلودر</string>
     <string name="detected_zygisk_official_magisk">تم اكتشاف Zygisk (Magisk النسخة الرسمية)</string>
     <string name="detected_zygisk_next">تم اكتشاف Zygisk Next (%s)</string>
-    <string name="debug_fingerprint_detected">تم اكتشاف بصمة تصحيح (%s)</string>
+    <string name="debug_fingerprint_detected">تم اكتشاف بصمة تصحيح الأخطاء (%s)</string>
     <string name="found_magisk_recovery_file">تم العثور على ملف Magisk/Recovery</string>
-    <string name="found_su_binary">تم العثور على SU Binary</string>
+    <string name="found_su_binary">تم العثور على ملف الجذر (SU)</string>
     <string name="detected_zygisk">تم اكتشاف Zygisk</string>
     <string name="detected_magisk_module">تم اكتشاف وحدة Magisk</string>
     <string name="found_injection">تم العثور على حقن</string>
@@ -81,7 +81,7 @@
     <string name="detected_ksu_ap_modules_img">تم اكتشاف KSU/AP modules.img</string>
     <string name="detected_custom_rom">تم اكتشاف ROM معدل (%s)</string>
     <string name="vendor_sepolicy_contains_lineage">يحتوي vendor_sepolicy.cil على lineage</string>
-    <string name="detected_gapps">تم اكتشاف GApps (تطبيقات كوكل)</string>
+    <string name="detected_gapps">تم اكتشاف GApps (تطبيقات Google)</string>
     <string name="detected_custom_kernel">تم اكتشاف نواة معدلة</string>
     <string name="detected_framework_patch">تم اكتشاف ترقيع Framework</string>
     <string name="detected_overlayfs">تم اكتشاف OverlayFS</string>
