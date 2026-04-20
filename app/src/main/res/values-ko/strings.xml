@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name" translatable="false">Native Detector</string>
+    <string name="settings">설정</string>
+    <string name="settings_app">앱</string>
+    <string name="settings_app_desc">언어 및 기타 설정</string>
+    <string name="settings_appearance">디자인</string>
+    <string name="settings_appearance_desc">테마와 색상 등 설정</string>
+    <string name="home_label">홈</string>
+    <string name="settings_label">설정</string>
+    <string name="support_us">후원하기</string>
+    <string name="detail">상세:</string>
+    <string name="about_view_source_code"><![CDATA[우리 %1$s 채널에 참가해 주세요<br/><br>Copyright © %2$s<br/>]]></string>
+    <string name="About">About</string>
+    <!-- _a & _b are set for certain languages -->
+    <string name="true_a">온</string>
+    <string name="false_a">오프</string>
+    <!-- _a is for experimental detection status -->
+    <string name="true_b">예</string>
+    <string name="false_b">아니오</string>
+    <!-- _b is for signature valid status -->
+    <string name="sysinfo">시스템</string>
+    <string name="sysinfo_device">장치: %s</string>
+    <string name="sysinfo_android_version">안드로이드 버전: %s</string>
+    <string name="sysinfo_kernel_version">커널 버전: %s</string>
+    <string name="appinfo">앱</string>
+    <string name="appinfo_version">앱 버전: %s</string>
+    <string name="appinfo_signature">앱 서명: %s</string>
+    <string name="appinfo_is_signature_valid">서명 유효성: %s</string>
+    <string name="appinfo_unknown_version">알 수 없음</string>
+    <string name="experimental_detections">실험적 탐지: %s</string>
+    <string name="DayNight">다크 모드</string>
+    <string name="the_environment_is_normal">환경이 정상입니다</string>
+    <string name="the_environment_is_abnormal">환경이 비정상입니다</string>
+    <string name="description_normal">환경 변조가 발견되지 않았습니다.</string>
+    <string name="description_abnormal">환경 변조가 발견되었습니다.</string>
+
+    <!-- Preference Strings -->
+    <string name="title_general">일반 설정</string>
+    <string name="pref_language">언어</string>
+    <string name="pref_telemetry">익명 데이터 수집 비활성화</string>
+    <string name="pref_telemetry_on">익명 데이터 수집이 비활성화되었습니다</string>
+    <string name="pref_telemetry_off">익명 데이터 수집과 전송을 중지합니다</string>
+    <string name="pref_experimental">실험적 탐지 활성화</string>
+    <string name="pref_experimental_on">실험적 탐지가 활성화되었습니다</string>
+    <string name="pref_experimental_off">실험적 탐지를 활성화합니다 (앱 재시작 필요)</string>
+    <string name="pref_dynamic_color">동적 색상</string>
+    <string name="pref_dynamic_color_desc">배경으로부터 색상을 가져와 앱 테마에 적용</string>
+    <string name="pref_dark_theme">다크 모드</string>
+    <string name="pref_high_contrast">고대비</string>
+
+    <!-- Language Strings -->
+    <string name="en">영어</string>
+    <string name="ar">아랍어</string>
+    <string name="de">독일어</string>
+    <string name="el">그리스어</string>
+    <string name="es">스페인어</string>
+    <string name="id">인도네시아어</string>
+    <string name="ja">일본어</string>
+    <string name="pl">폴란드어</string>
+    <string name="pt_br">포르투갈어 (브라질)</string>
+    <string name="ru">러시아어</string>
+    <string name="sl">슬로베니아어</string>
+    <string name="tr_tr">튀르키예어 (터키어)</string>
+    <string name="vi">베트남어</string>
+    <string name="zh_cn">중국어 (간체)</string>
+    <string name="zh_tw">중국어 (번체)</string>
+    <string name="bg">불가리아어</string>
+    <string name="ko">한국어</string>
+    
+    <!-- Update Strings -->
+    <string name="failed_to_get_update_info">업데이트 정보를 가져오지 못했습니다</string>
+    <string name="update_available">업데이트 가능</string>
+    <string name="version_is_available">버전 %s을 사용할 수 있습니다. 지금 다운로드하시겠습니까?</string>
+    <string name="update_confirm">확인</string>
+    <string name="update_cancel">취소</string>
+    <string name="update_downloading">업데이트 다운로드 중</string>
+    <string name="update_wait">잠시 기다려 주세요…</string>
+    <string name="download_failed">다운로드 실패: %s</string>
+    <string name="error">에러: %s</string>
+    <string name="unable_to_install">APK를 설치하기 위한 앱이 없습니다</string>
+
+    <!-- Detection Strings -->
+    <string name="modified_environment_detected">변조된 환경 탐지됨</string>
+    <string name="suspicious_mount_detected">의심스러운 마운트 탐지됨</string>
+    <string name="detected_kernelsu_magisk">KernelSU/Magisk 탐지됨</string>
+    <string name="detected_magisk">Magisk 탐지됨</string>
+    <string name="detected_zygisk_assistant">Zygisk-Assistant 탐지됨</string>
+    <string name="bootloader_unlocked">부트로더가 언락됨</string>
+    <string name="oem_unlocking_enabled">OEM 언락이 활성화됨</string>
+    <string name="detected_zygisk_official_magisk">Zygisk(공식 Magisk) 탐지됨</string>
+    <string name="detected_zygisk_next">Zygisk Next 탐지됨 (%s)</string>
+    <string name="debug_fingerprint_detected">디버그 지문 탐지됨 (%s)</string>
+    <string name="found_magisk_recovery_file">Magisk/Recovery 파일 탐지됨</string>
+    <string name="found_su_binary">SU 바이너리 탐지됨</string>
+    <string name="detected_zygisk">Zygisk 탐지됨</string>
+    <string name="detected_magisk_module">Magisk 모듈 탐지됨</string>
+    <string name="found_injection">인젝션 탐지됨</string>
+    <string name="detected_lsposed">LSPosed 탐지됨 (%s)</string>
+    <string name="no_system_apps_found">시스템 앱이 발견되지 않음</string>
+    <string name="detected_lineageos">LineageOS 탐지됨 (%s)</string>
+    <string name="no_info_given">공개된 정보 없음</string>
+    <string name="detected_modified_hosts_file">변조된 Hosts 파일 탐지됨</string>
+    <string name="detected_resetprop">Resetprop 탐지됨</string>
+    <string name="tee_is_broken">TEE가 손상됨</string>
+    <string name="keybox_revoked_by_google">키박스 %s 가 Google에 의해 취소됨</string>
+    <string name="key_attestation_failed">키 인증 실패</string>
+    <string name="detected_abnormal_boot_state">비정상적인 부팅 상태 탐지됨</string>
+    <string name="detected_leaked_keybox">유출된 키박스 탐지됨</string>
+    <string name="detected_mount_abnormality">마운트 이상 탐지됨</string>
+    <string name="detected_root_solution">루트 솔루션 탐지됨</string>
+    <string name="detected_hide_my_applist">Hide My Applist 탐지됨</string>
+    <string name="detected_ksu_ap_modules_img">KernelSU/APatch modules.img 탐지됨</string>
+    <string name="detected_custom_rom">커스텀 롬 탐지됨 (%s)</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil에 'lineage'가 포함됨</string>
+    <string name="detected_gapps">GApps 탐지됨</string>
+    <string name="detected_custom_kernel">커스텀 커널 탐지됨</string>
+    <string name="detected_framework_patch">프레임워크 패치 탐지됨</string>
+    <string name="detected_overlayfs">OverlayFS 탐지됨</string>
+    <string name="detected_overlay_mounted">마운트된 Overlay 탐지됨</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Overlay가 마운트되었지만 숨겨져 있을 수 있음</string>
+    <string name="detected_risky_app">위협적인 앱 탐지됨</string>
+    <string name="hide_my_applist_is_likely_used">Hide My Applist 사용이 의심됨</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Addon.d 또는 install-recovery.sh 존재</string>
+    <string name="detected_root_app">루트 앱 탐지</string>
+    <string name="detected_mount_inconsistency">마운트 불일치 탐지됨</string>
+    <string name="umount_detected">Umount 탐지됨</string>
+</resources>
