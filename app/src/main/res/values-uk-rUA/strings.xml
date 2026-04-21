@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name" translatable="false">Native Detector</string>
+    <string name="settings">Налаштування</string>
+    <string name="settings_app">Додаток</string>
+    <string name="settings_app_desc">Мова та інше</string>
+    <string name="settings_appearance">Вигляд</string>
+    <string name="settings_appearance_desc">Тема, колір та інше</string>
+    <string name="home_label">Головна</string>
+    <string name="settings_label">Налаштування</string>
+    <string name="support_us">Підтримайте нас</string>
+    <string name="detail">Деталі:</string>
+    <string name="about_view_source_code"><![CDATA[Приєднуйтесь до нашого каналу %1$s<br/><br/>Авторське право © %2$s<br/>]]></string>
+    <string name="About">Про додаток</string>
+    <!-- _a & _b встановлюються для певних мов -->
+    <string name="true_a">Так</string>
+    <string name="false_a">Ні</string>
+    <!-- _a для статусу експериментального виявлення -->
+    <string name="true_b">Так</string>
+    <string name="false_b">Ні</string>
+    <!-- _b для статусу валідності підпису -->
+    <string name="sysinfo">Система</string>
+    <string name="sysinfo_device">Пристрій: %s</string>
+    <string name="sysinfo_android_version">Версія Android: %s</string>
+    <string name="sysinfo_kernel_version">Версія ядра: %s</string>
+    <string name="appinfo">Додаток</string>
+    <string name="appinfo_version">Версія додатка: %s</string>
+    <string name="appinfo_signature">Підпис додатка: %s</string>
+    <string name="appinfo_is_signature_valid">Підпис дійсний: %s</string>
+    <string name="appinfo_unknown_version">НЕВІДОМО</string>
+    <string name="experimental_detections">Експериментальні виявлення: %s</string>
+    <string name="DayNight">Темний режим</string>
+    <string name="the_environment_is_normal">Оточення в нормі</string>
+    <string name="the_environment_is_abnormal">Оточення не в нормі</string>
+    <string name="description_normal">Змін в оточенні не виявлено.</string>
+    <string name="description_abnormal">Виявлено зміни в оточенні.</string>
+
+    <!-- Рядки налаштувань -->
+    <string name="title_general">Загальні</string>
+    <string name="pref_language">Мова</string>
+    <string name="pref_telemetry">Вимкнути телеметрію</string>
+    <string name="pref_telemetry_on">Телеметрія Sentry вимкнена</string>
+    <string name="pref_telemetry_off">Це вимкне телеметрію Sentry</string>
+    <string name="pref_experimental">Увімкнути експериментальні виявлення</string>
+    <string name="pref_experimental_on">Експериментальні виявлення увімкнено</string>
+    <string name="pref_experimental_off">Це увімкне експериментальні виявлення (потрібне перезавантаження)</string>
+    <string name="pref_dynamic_color">Динамічний колір</string>
+    <string name="pref_dynamic_color_desc">Застосувати кольори зі шпалер до теми додатка</string>
+    <string name="pref_dark_theme">Темна тема</string>
+    <string name="pref_high_contrast">Високий контраст</string>
+
+    <!-- Рядки мов -->
+    <string name="en">Англійська</string>
+    <string name="ar">Арабська</string>
+    <string name="de">Німецька</string>
+    <string name="el">Грецька</string>
+    <string name="es">Іспанська</string>
+    <string name="id">Індонезійська</string>
+    <string name="ja">Японська</string>
+    <string name="pl">Польська</string>
+    <string name="pt_br">Португальська (Бразилія)</string>
+    <string name="ru">Російська</string>
+    <string name="uk_ua">Українська (Україна)</string>
+    <string name="sl">Словенська</string>
+    <string name="tr_tr">Турецька (Туреччина)</string>
+    <string name="vi">В\'єтнамська</string>
+    <string name="zh_cn">Китайська (спрощена)</string>
+    <string name="zh_tw">Китайська (традиційна)</string>
+    <string name="bg">Болгарська</string>
+
+    <!-- Рядки оновлень -->
+    <string name="failed_to_get_update_info">Не вдалося отримати інформацію про оновлення</string>
+    <string name="update_available">Доступне оновлення</string>
+    <string name="version_is_available">Версія %s доступна. Завантажити її зараз?</string>
+    <string name="update_confirm">OK</string>
+    <string name="update_cancel">Скасувати</string>
+    <string name="update_downloading">Завантаження оновлення</string>
+    <string name="update_wait">Будь ласка, зачекайте…</string>
+    <string name="download_failed">Не вдалося завантажити: %s</string>
+    <string name="error">Помилка: %s</string>
+    <string name="unable_to_install">Немає програми для встановлення APK</string>
+
+    <!-- Рядки виявлення -->
+    <string name="modified_environment_detected">Виявлено змінене оточення</string>
+    <string name="suspicious_mount_detected">Виявлено підозріле монтування</string>
+    <string name="detected_kernelsu_magisk">Виявлено KernelSU/Magisk</string>
+    <string name="detected_magisk">Виявлено Magisk</string>
+    <string name="detected_zygisk_assistant">Виявлено Zygisk-Assistant</string>
+    <string name="bootloader_unlocked">Завантажувач розблоковано</string>
+    <string name="oem_unlocking_enabled">OEM-розблокування увімкнено</string>
+    <string name="detected_zygisk_official_magisk">Виявлено Zygisk (офіційний Magisk)</string>
+    <string name="detected_zygisk_next">Виявлено Zygisk Next (%s)</string>
+    <string name="debug_fingerprint_detected">Виявлено відбиток налагодження (%s)</string>
+    <string name="found_magisk_recovery_file">Знайдено файл Magisk/Recovery</string>
+    <string name="found_su_binary">Знайдено бінарний файл SU</string>
+    <string name="detected_zygisk">Виявлено Zygisk</string>
+    <string name="detected_magisk_module">Виявлено модуль Magisk</string>
+    <string name="found_injection">Виявлено ін\'єкцію</string>
+    <string name="detected_lsposed">Виявлено LSPosed (%s)</string>
+    <string name="no_system_apps_found">Системних додатків не знайдено</string>
+    <string name="detected_lineageos">Виявлено LineageOS (%s)</string>
+    <string name="no_info_given">Інформація не надана</string>
+    <string name="detected_modified_hosts_file">Виявлено змінений файл Hosts</string>
+    <string name="detected_resetprop">Виявлено Resetprop</string>
+    <string name="tee_is_broken">TEE пошкоджено</string>
+    <string name="keybox_revoked_by_google">Keybox %s відкликано Google</string>
+    <string name="key_attestation_failed">Атестація ключа не вдалася</string>
+    <string name="detected_abnormal_boot_state">Виявлено ненормальний стан завантаження</string>
+    <string name="detected_leaked_keybox">Виявлено витік Keybox</string>
+    <string name="detected_mount_abnormality">Виявлено аномалію монтування</string>
+    <string name="detected_root_solution">Виявлено рішення для отримання Root-прав</string>
+    <string name="detected_hide_my_applist">Виявлено Hide My Applist</string>
+    <string name="detected_ksu_ap_modules_img">Виявлено KSU/AP modules.img</string>
+    <string name="detected_custom_rom">Виявлено кастомну прошивку (%s)</string>
+    <string name="vendor_sepolicy_contains_lineage">vendor_sepolicy.cil містить lineage</string>
+    <string name="detected_gapps">Виявлено GApps</string>
+    <string name="detected_custom_kernel">Виявлено кастомне ядро</string>
+    <string name="detected_framework_patch">Виявлено патч фреймворку</string>
+    <string name="detected_overlayfs">Виявлено OverlayFS</string>
+    <string name="detected_overlay_mounted">Виявлено змонтований оверлей</string>
+    <string name="overlay_mounted_but_mount_may_be_hidden">Оверлей змонтовано, але точка монтування може бути прихована</string>
+    <string name="detected_risky_app">Виявлено ризикований додаток</string>
+    <string name="hide_my_applist_is_likely_used">Ймовірно, використовується Hide My Applist</string>
+    <string name="addon_d_or_install_recovery_sh_exists">Існує Addon.d або install-recovery.sh</string>
+    <string name="detected_root_app">Виявлено додаток з Root-правами</string>
+    <string name="detected_mount_inconsistency">Виявлено неузгодженість монтування</string>
+    <string name="umount_detected">Виявлено розмонтування</string>
+</resources>
