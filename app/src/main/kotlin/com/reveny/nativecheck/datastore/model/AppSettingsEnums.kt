@@ -38,5 +38,6 @@ enum class Language {
     VIETNAMESE,
     CHINESE_SIMPLIFIED,
     CHINESE_TRADITIONAL,
-    BULGARIAN
+    BULGARIAN,
+    THAI
 }
